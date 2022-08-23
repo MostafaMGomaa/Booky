@@ -73,19 +73,20 @@ A simple JWT-based auth mechanism is to be used with passwords
 **Auth**:
 
 ```
-/signup          [POST]
-/login           [POST]
-/signout         [GET]
-/forgotPassword  [POST]
-/resetPassword   [PATCH]
+/signup                 [POST]
+/login                  [POST]
+/signout                [GET]
+/forgotPassword         [POST]
+/resetPassword/:token   [PATCH]
+/updatePassword         [PATCH]
 ```
 
 **Books**:
 
 ```
 /books     [GET]
-/books     [POST] #create new book for only admin
-/books/:id [GET]  #get one book by id
+/books     [POST]
+/books/:id [GET]
 /books/:id [PATCH]
 /books/:id [DELETE]
 ```
@@ -93,11 +94,18 @@ A simple JWT-based auth mechanism is to be used with passwords
 **Users**:
 
 ```
-/user/                     [GET]
-/user/:id                  [GET]
-/user/me                   [GET]
-/user/deleteMe             [DELETE]
-/user/updateMyPassword     [PATCH]
+/users/                     [GET]
+/users/:id                  [GET]
+/users/me                   [GET]
+/users/deleteMe             [DELETE]
+/users/updateMyPassword     [PATCH]
+```
+
+**Users**:
+
+```
+/cart     [GET]
+
 ```
 
 ### Error handling
