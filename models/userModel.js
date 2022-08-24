@@ -71,6 +71,13 @@ userSchema.pre('save', function (next) {
   next();
 });
 
+// QUERY MEDDILLEWARE
+
+userSchema.pre(/^find/, function (next) {
+  this.find({ active: { $ne: false } });
+  next();
+});
+
 /* METHODS */
 
 userSchema.methods.correctPassword = function (
