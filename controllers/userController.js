@@ -3,7 +3,6 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
 exports.getAllUsers = catchAsync(async (req, res, next) => {
-  console.log('Hello from user c');
   const user = await User.find();
   res.status(200).json({
     status: 'success',

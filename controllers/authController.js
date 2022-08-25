@@ -115,7 +115,6 @@ exports.protect = catchAsync(async (req, res, next) => {
 
 exports.restrictTo = (...roles) => {
   return (req, res, next) => {
-    console.log(req.user.role, roles);
     if (!roles.includes(req.user.role)) {
       return next(
         new AppError(403, `This action is Not allowed as ${req.user.role}`)
@@ -142,7 +141,6 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
 
   const message = `Do patch req with new password and confirm it to ${resetUrl}.\nIf u didn't forget about this msg`;
   try {
-    console.log('hello before sendemail ');
     await sendEmail({
       email: user.email,
       subject: 'Your password reset token (valid for 10 min)',
@@ -158,7 +156,6 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
     user.passwordResetExpires = undefined;
 
     await user.save({ validateBeforeSave: false });
-    console.log(err);
     return next(
       new AppError(500, 'Error while sending email, try again later')
     );
