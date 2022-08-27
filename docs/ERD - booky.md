@@ -101,10 +101,11 @@ A simple JWT-based auth mechanism is to be used with passwords
 /users/updateMyPassword     [PATCH]
 ```
 
-**Users**:
+**Chart**:
 
 ```
 /cart     [GET]
+/cart/:bookId
 
 ```
 
