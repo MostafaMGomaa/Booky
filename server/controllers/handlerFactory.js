@@ -1,6 +1,7 @@
 const catchAsync = require('../utils/catchAsync');
 const APIFeatures = require('../utils/apiFeatures');
 const AppError = require('../utils/appError');
+const { setRelatedBooksToNewBook } = require('../utils/relatedBook');
 
 exports.getAll = (Model) =>
   catchAsync(async (req, res, next) => {
@@ -42,6 +43,8 @@ exports.getOne = (Model) =>
 exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
     const doc = await Model.create(req.body);
+
+    if (doc.isbn) setRelatedBooksToNewBook(doc);
 
     // SEND RESPONSE
     res.status(201).json({

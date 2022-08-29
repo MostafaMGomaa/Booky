@@ -8,7 +8,7 @@ const chartItem = mongoose.Schema({
   },
   user: {
     type: mongoose.Schema.ObjectId,
-    ref: 'Book',
+    ref: 'User',
     require: [true, 'A Chart item must be a belong to user'],
   },
   price: {

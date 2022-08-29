@@ -11,6 +11,8 @@ a public endpoint.
 We 'll use a docment database (mongoDB).
 We 'll host db at mongo atlas.
 
+**Look At** Database relations in [Database digram](DBD.png)
+
 ### Schema
 
 We 'll need at least the following documents to implement
@@ -24,13 +26,13 @@ the Service
 | Isbn | String|
 | PageCount | Number|
 | Price | Number|
-| publishedDate | TimeStamp |
-| thumbnailUrl | String |
-| shortDescription | String |
-| longDescription | String |
-| status | String |
-| authors | Array |
-| categories | Array |
+| publishedDate | Date |
+| ThumbnailUrl | String |
+| ShortDescription | String |
+| LongDescription | String |
+| Status | String |
+| Authors | Array |
+| Categories | Array |
 
 **User**:
 | Attribute | Type |
@@ -55,6 +57,15 @@ the Service
 | CreatedAt | Date |
 | Paid | Boolean |
 
+**Reviews**:
+| Attribute | Type |
+|---------- |----- |
+|Review| String|
+|Rating| Number|
+|CreatedAt| Date |
+|Book| BookObject|
+|User|UserObject |
+
 ## Server
 
 A Simple HTTP server us responsible to authentication serving stored data ,
@@ -62,7 +73,7 @@ user can filter data via query string.
 
 - Node.js for implementing server .
 - Express.js is the web server framework.
-- Mongoose ODM
+- Mongoose ODM.
 
 ### Auth
 

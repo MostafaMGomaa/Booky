@@ -5,6 +5,7 @@ const {
   createBook,
   deleteBook,
   updateBook,
+  setRelatedBooks,
 } = require('../controllers/bookController');
 const { protect, restrictTo } = require('../controllers/authController');
 
@@ -12,10 +13,14 @@ router
   .route('/')
   .get(getAllBooks)
   .post(protect, restrictTo('admin', 'librarian'), createBook);
+
+router.use(protect);
+
 router
   .route('/:id')
-  .get(protect, getBook)
-  .patch(protect, restrictTo('admin', 'librarian'), updateBook)
-  .delete(protect, restrictTo('admin', 'librarian'), deleteBook);
+  .get(getBook)
+  .patch(restrictTo('admin', 'librarian'), updateBook)
+  .delete(restrictTo('admin', 'librarian'), deleteBook);
 
+router.post('/relatedBooks', setRelatedBooks);
 module.exports = router;
