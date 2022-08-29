@@ -35,12 +35,12 @@ exports.setRelatedBooksToNewBook = async (currentBook) => {
 
 exports.deleteRelatedBooks = (books, currentBook) => {
   books.map(async (book) => {
-    book.relatedBooks.map((id) => {
-      if (id.equals(currentBook.id)) console.log('Hello AFTER IF');
+    book.relatedBooks.map(async (id) => {
+      if (id.equals(currentBook.id)) {
+        const idInedx = book.relatedBooks.indexOf(currentBook.id);
+        book.relatedBooks.splice(idInedx, 1);
+      }
     });
-    //   const idInedx = book.relatedBooks.indexOf(currentBook.id);
-    //   book.relatedBooks.splice(idInedx, 1);
-
-    // await book.save();
+    await book.save();
   });
 };
