@@ -27,7 +27,7 @@ exports.setRelatedBooksToNewBook = async (currentBook) => {
         currentBook.relatedBooks.push(book.id);
         book.relatedBooks.push(currentBook.id);
       }
-      await book.save();
+      // await book.save();
     });
   });
   await currentBook.save();

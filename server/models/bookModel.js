@@ -45,7 +45,7 @@ const bookSchema = new mongoose.Schema(
     slug: String,
     relatedBooks: [
       {
-        type: mongoose.ObjectId,
+        type: mongoose.Schema.ObjectId,
         ref: 'Book',
       },
     ],
@@ -65,6 +65,15 @@ bookSchema.pre('save', function (next) {
   this.price = Math.round((this.pageCount / 100) * 10 * 1.2) + 0.99;
   next();
 });
+
+// bookSchema.post('save', async function () {
+//   const relatedBooksPromises = this.relatedBooks.map(
+//     async (id) => await Book.findById(id)
+//   );
+//   this.relatedBooks = await Promise.all(relatedBooksPromises);
+//   console.log(`relatedBooks , ${this.relatedBooks}`);
+//   console.log(`promise , ${relatedBooksPromises}`);
+// });
 
 const Book = mongoose.model('Book', bookSchema);
 module.exports = Book;

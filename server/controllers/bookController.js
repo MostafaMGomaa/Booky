@@ -8,7 +8,10 @@ const {
 } = require('../utils/relatedBook');
 
 exports.getAllBooks = getAll(Book);
-exports.getBook = getOne(Book);
+exports.getBook = getOne(Book, {
+  path: 'relatedBooks',
+  select: '-longDescription -__v -relatedBooks',
+});
 exports.createBook = createOne(Book);
 exports.updateBook = upadateOne(Book);
 
@@ -20,7 +23,7 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
     return next(new AppError(404, `Cannot find any result with this ID`));
 
   deleteRelatedBooks(books, currentBook);
-  // await book.deleteOne();
+  await currentBook.deleteOne();
 
   res.status(204).json({
     status: 'success',

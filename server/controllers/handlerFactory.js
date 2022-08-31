@@ -24,9 +24,13 @@ exports.getAll = (Model) =>
     });
   });
 
-exports.getOne = (Model) =>
+exports.getOne = (Model, popOptions) =>
   catchAsync(async (req, res, next) => {
-    const doc = await Model.findById(req.params.id);
+    let query = await Model.findById(req.params.id);
+
+    if (popOptions) query = await query.populate(popOptions);
+
+    const doc = await query;
 
     if (!doc)
       return next(new AppError(404, `Cannot find any result with this ID`));
