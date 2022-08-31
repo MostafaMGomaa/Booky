@@ -27,6 +27,8 @@ the Service
 | PageCount | Number|
 | Price | Number|
 | Discount | Number |
+|Ratings Average | Number |
+|Ratings Quantity | Number |
 | publishedDate | Date |
 | ThumbnailUrl | String |
 | ShortDescription | String |
@@ -116,14 +118,23 @@ A simple JWT-based auth mechanism is to be used with passwords
 **Chart**:
 
 ```
-/cart     [GET]
-/cart/:bookId
+/cart           [GET]
+/cart/:bookId   [GET]
+
+```
+
+**Reviews**:
+
+```
+/reviews   [GET]
+/reviews   [POST]
+/reviews/:id   [GET]
 
 ```
 
 ### Error handling
 
-We will implement:
+We will implement :
 
 - AppError class to handling non exsisting routes
 

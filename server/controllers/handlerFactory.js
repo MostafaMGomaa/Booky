@@ -59,7 +59,7 @@ exports.createOne = (Model) =>
     });
   });
 
-exports.upadateOne = (Model) =>
+exports.updateOne = (Model) =>
   catchAsync(async (req, res, next) => {
     const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
       new: true,

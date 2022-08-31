@@ -1,7 +1,7 @@
 const Book = require('../models/bookModel');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
-const { getAll, getOne, createOne, upadateOne } = require('./handlerFactory');
+const { getAll, getOne, createOne, updateOne } = require('./handlerFactory');
 const {
   setAllRelatedBook,
   deleteRelatedBooks,
@@ -13,7 +13,7 @@ exports.getBook = getOne(Book, {
   select: '-longDescription -__v -relatedBooks',
 });
 exports.createBook = createOne(Book);
-exports.updateBook = upadateOne(Book);
+exports.updateBook = updateOne(Book);
 
 exports.deleteBook = catchAsync(async (req, res, next) => {
   const books = await Book.find();

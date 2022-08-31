@@ -22,6 +22,22 @@ const bookSchema = new mongoose.Schema(
     price: Number,
     discountRate: {
       type: Number,
+      default: 1,
+      validate: {
+        validator: function (val) {
+          return val < 70;
+        },
+        message: 'Discount Rate should be below than 70%',
+      },
+    },
+    ratingsAverage: {
+      type: Number,
+      min: [1, 'Rating must be above 1.0'],
+      max: [5, 'Rating must be below 5.0'],
+      set: (val) => Math.round(val * 10) / 10,
+    },
+    ratingsQuantity: {
+      type: Number,
       default: 0,
     },
     publishedDate: Date,
@@ -66,8 +82,11 @@ bookSchema.pre('save', function (next) {
 });
 
 bookSchema.pre('save', function (next) {
-  const orignalPrice = Math.round((this.pageCount / 100) * 10 * 1.2) + 0.99;
-  this.price = orignalPrice * (this.discountRate / 100);
+  const orignalPrice = (this.pageCount / 100) * 15;
+
+  if (this.discountRate)
+    this.price = Math.round(orignalPrice * (this.discountRate / 100)) + 0.99;
+  else this.price = Math.round(orignalPrice) + 0.99;
   next();
 });
 
