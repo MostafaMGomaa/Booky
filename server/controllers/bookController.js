@@ -9,7 +9,7 @@ const {
 
 exports.getAllBooks = getAll(Book);
 exports.getBook = getOne(Book, {
-  path: 'relatedBooks',
+  path: 'relatedBooks reviews',
   select: '-longDescription -__v -relatedBooks',
 });
 exports.createBook = createOne(Book);

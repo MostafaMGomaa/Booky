@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
-const catchAsync = require('../utils/catchAsync');
 
 const bookSchema = new mongoose.Schema(
   {
@@ -75,6 +74,12 @@ const bookSchema = new mongoose.Schema(
     toObject: { virtuals: true },
   }
 );
+
+bookSchema.virtual('reviews', {
+  ref: 'Review',
+  foreignField: 'book',
+  localField: '_id',
+});
 
 bookSchema.pre('save', function (next) {
   this.slug = slugify(this.title, { lower: true });
