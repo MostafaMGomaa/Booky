@@ -26,8 +26,8 @@ exports.setRelatedBooksToNewBook = async (currentBook) => {
       if (book.categories.includes(cat) && book.id !== currentBook.id) {
         currentBook.relatedBooks.push(book.id);
         book.relatedBooks.push(currentBook.id);
+        await book.save();
       }
-      // await book.save();
     });
   });
   await currentBook.save();
@@ -39,8 +39,8 @@ exports.deleteRelatedBooks = (books, currentBook) => {
       if (id.equals(currentBook.id)) {
         const idInedx = book.relatedBooks.indexOf(currentBook.id);
         book.relatedBooks.splice(idInedx, 1);
+        await book.save();
       }
     });
-    await book.save();
   });
 };

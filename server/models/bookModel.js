@@ -20,6 +20,10 @@ const bookSchema = new mongoose.Schema(
       required: [true, 'A Book must have a number of Pages '],
     },
     price: Number,
+    discountRate: {
+      type: Number,
+      default: 0,
+    },
     publishedDate: Date,
     thumbnailUrl: String,
     shortDescription: {
@@ -62,18 +66,10 @@ bookSchema.pre('save', function (next) {
 });
 
 bookSchema.pre('save', function (next) {
-  this.price = Math.round((this.pageCount / 100) * 10 * 1.2) + 0.99;
+  const orignalPrice = Math.round((this.pageCount / 100) * 10 * 1.2) + 0.99;
+  this.price = orignalPrice * (this.discountRate / 100);
   next();
 });
-
-// bookSchema.post('save', async function () {
-//   const relatedBooksPromises = this.relatedBooks.map(
-//     async (id) => await Book.findById(id)
-//   );
-//   this.relatedBooks = await Promise.all(relatedBooksPromises);
-//   console.log(`relatedBooks , ${this.relatedBooks}`);
-//   console.log(`promise , ${relatedBooksPromises}`);
-// });
 
 const Book = mongoose.model('Book', bookSchema);
 module.exports = Book;

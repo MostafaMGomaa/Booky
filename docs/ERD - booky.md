@@ -26,6 +26,7 @@ the Service
 | Isbn | String|
 | PageCount | Number|
 | Price | Number|
+| Discount | Number |
 | publishedDate | Date |
 | ThumbnailUrl | String |
 | ShortDescription | String |
