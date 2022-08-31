@@ -8,6 +8,12 @@ const {
   updateOne,
 } = require('./handlerFactory');
 
+exports.setTourUserIds = (req, res, next) => {
+  if (!req.body.user) req.body.user = req.user.id;
+  if (!req.body.book) req.body.book = req.params.bookId;
+  next();
+};
+
 exports.getAllReviews = getAll(Review);
 exports.getReview = getOne(Review);
 exports.createReview = createOne(Review);

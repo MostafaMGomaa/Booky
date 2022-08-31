@@ -126,10 +126,17 @@ A simple JWT-based auth mechanism is to be used with passwords
 **Reviews**:
 
 ```
-/reviews   [GET]
-/reviews   [POST]
+/reviews       [GET]
+/reviews       [POST]
 /reviews/:id   [GET]
 
+```
+
+**Reviews on Books**:
+
+```
+/:bookId/reviews    [Get]
+/:bookId/reviews    [POST]
 ```
 
 ### Error handling

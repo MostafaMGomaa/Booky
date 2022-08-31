@@ -1,4 +1,5 @@
 const User = require('../models/userModel');
+const { getOne } = require('./handlerFactory');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
@@ -13,15 +14,8 @@ exports.getAllUsers = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getUser = (req, res, next) => {
-  res.status(200).send('One user');
-};
-exports.createUser = (req, res, next) => {
-  res.status(201).send('New user created');
-};
-exports.updateUser = (req, res, next) => {
-  res.status(200).send('User has updated');
-};
+exports.getUser = getOne(User);
+
 exports.deleteUser = (req, res, next) => {
   res.status(200).send('user has deleted');
 };
@@ -63,3 +57,8 @@ exports.deleteMe = catchAsync(async (req, res, next) => {
     data: null,
   });
 });
+
+exports.getMe = (req, res, next) => {
+  req.params.id = req.user.id;
+  next();
+};

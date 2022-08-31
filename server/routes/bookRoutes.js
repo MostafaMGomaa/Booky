@@ -8,6 +8,9 @@ const {
   setRelatedBooks,
 } = require('../controllers/bookController');
 const { protect, restrictTo } = require('../controllers/authController');
+const reviewRouter = require('./reviewsRoutes');
+
+router.use('/:bookId/reviews', reviewRouter);
 
 router
   .route('/')

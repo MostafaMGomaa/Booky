@@ -5,9 +5,9 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 
-const bookRouter = require('./routes/bookRouter');
-const userRouter = require('./routes/userRouter');
-const reviewsRouter = require('./routes/reviewsRouter');
+const bookRoutes = require('./routes/bookRoutes');
+const userRoutes = require('./routes/userRoutes');
+const reviewsRoutes = require('./routes/reviewsRoutes');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
 
@@ -44,9 +44,9 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/api/v1/books', bookRouter);
-app.use('/api/v1/users', userRouter);
-app.use('/api/v1/reviews', reviewsRouter);
+app.use('/api/v1/books', bookRoutes);
+app.use('/api/v1/users', userRoutes);
+app.use('/api/v1/reviews', reviewsRoutes);
 
 app.all('*', (req, res, next) => {
   next(new AppError(404, `Can't find ${req.originalUrl} on this server`));
