@@ -21,7 +21,6 @@ const bookSchema = new mongoose.Schema(
     price: Number,
     discountRate: {
       type: Number,
-      default: 1,
       validate: {
         validator: function (val) {
           return val < 70;
@@ -87,11 +86,12 @@ bookSchema.pre('save', function (next) {
 });
 
 bookSchema.pre('save', function (next) {
-  const orignalPrice = (this.pageCount / 100) * 15;
+  const orignalPrice = (this.pageCount / 100) * 50;
 
   if (this.discountRate)
-    this.price = Math.round(orignalPrice * (this.discountRate / 100)) + 0.99;
-  else this.price = Math.round(orignalPrice) + 0.99;
+    this.price = orignalPrice - orignalPrice * (this.discountRate / 100);
+  else this.price = orignalPrice - 0.1;
+  this.price = this.price.toFixed(2);
   next();
 });
 

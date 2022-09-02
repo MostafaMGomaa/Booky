@@ -15,7 +15,7 @@ router.use('/:bookId/reviews', reviewRouter);
 router
   .route('/')
   .get(getAllBooks)
-  .post(protect, restrictTo('admin', 'librarian'), createBook);
+  .post(protect, restrictTo('admin', 'librarian', 'vendor'), createBook);
 
 router.use(protect);
 
