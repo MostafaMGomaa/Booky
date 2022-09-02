@@ -8,6 +8,7 @@ exports.getAll = (Model) =>
     // To allow for nested GET reviews on tour (hack)
     let filter = {};
     if (req.params.tourId) filter = { tour: req.params.tourId };
+
     // Excute the query
     const features = new APIFeatures(Model.find(filter), req.query)
       .filter()
@@ -17,11 +18,22 @@ exports.getAll = (Model) =>
 
     const doc = await features.query;
 
+    let categories = [];
+
+    if (doc[0].isbn) {
+      doc.map((book) => {
+        book.categories.map((cat) => {
+          if (!categories.includes(cat)) categories.push(cat);
+        });
+      });
+    }
+
     // SEND RESPONSE
     res.status(200).json({
       status: 'success',
       result: doc.length,
       data: {
+        categories,
         doc,
       },
     });
