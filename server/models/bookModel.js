@@ -43,7 +43,7 @@ const bookSchema = new mongoose.Schema(
     shortDescription: {
       type: String,
       default:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at dolor et quam hendrerit ultrices. In laoreet dignissim nisi, eu porttitor ipsum pellentesque',
+        'Pellentesque non mi sit amet nisl convallis ullamcorper a mollis quam. Aliquam vel justo eros. Donec pulvinar lectus vel scelerisque rutrum. Aliquam fermentum, magna a elementum ullamcorper, mauris quam pulvinar metus, non tempor tortor neque in leo. Morbi vehicula eget tortor sed cursus. Ut malesuada viverra pellentesque. Praesent tempor fringilla consequat. Etiam sed libero ante. Pellentesque nec massa id metus tempus porta at a est. In rutrum imperdiet tellus, in mattis erat dignissim sed.',
     },
     longDescription: {
       type: String,
@@ -60,6 +60,7 @@ const bookSchema = new mongoose.Schema(
       require: [true, 'A Book must have at least an author'],
     },
     categories: [String],
+
     slug: String,
     relatedBooks: [
       {
@@ -73,6 +74,19 @@ const bookSchema = new mongoose.Schema(
     toObject: { virtuals: true },
   }
 );
+
+bookSchema.index({
+  price: 1,
+  ratingsAverage: 1,
+});
+
+bookSchema.index({
+  slug: 1,
+});
+
+bookSchema.index({
+  categories: 1,
+});
 
 bookSchema.virtual('reviews', {
   ref: 'Review',
