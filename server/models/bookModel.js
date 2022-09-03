@@ -76,7 +76,7 @@ const bookSchema = new mongoose.Schema(
 );
 
 bookSchema.index({
-  price: 1,
+  price: -1,
   ratingsAverage: 1,
 });
 
