@@ -18,12 +18,12 @@ exports.getAll = (Model) =>
 
     const doc = await features.query;
 
-    let categories = [];
+    let categories = new Set();
 
     if (doc[0].isbn) {
       doc.map((book) => {
         book.categories.map((cat) => {
-          if (!categories.includes(cat)) categories.push(cat);
+          if (!categories.has(cat)) categories.add(cat);
         });
       });
     }
@@ -33,7 +33,7 @@ exports.getAll = (Model) =>
       status: 'success',
       result: doc.length,
       data: {
-        categories,
+        categories: Array.from(categories),
         doc,
       },
     });

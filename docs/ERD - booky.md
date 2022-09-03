@@ -154,7 +154,7 @@ We will implement :
 For now we'll start with a single web client, possibly adding mobile clients later.
 
 The web client will be implemented in HTML, CSS, JS.
-Uses may be Bootstrap or Chakra UI may both.
+Uses may be Bootstrap .
 
 ## Hosting
 
