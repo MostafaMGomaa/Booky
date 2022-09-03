@@ -1,7 +1,7 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const Book = require('./../models/bookModel');
+const Book = require('../models/bookModel');
 
 dotenv.config({ path: '../config.env' });
 
@@ -13,9 +13,7 @@ const DB = process.env.DATABASE.replace(
 mongoose.connect(DB).then(() => console.log('DB connection successful!'));
 
 // READ JSON FILE
-const books = JSON.parse(
-  fs.readFileSync(`${__dirname}/books-sample.json`, 'utf-8')
-);
+const books = JSON.parse(fs.readFileSync(`${__dirname}/books.json`, 'utf-8'));
 
 // IMPORT DATA INTO DB
 const importData = async () => {

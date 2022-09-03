@@ -39,7 +39,10 @@ const bookSchema = new mongoose.Schema(
       default: 0,
     },
     publishedDate: Date,
-    thumbnailUrl: String,
+    thumbnailUrl: {
+      type: String,
+      required: [true, 'Go back and bring photo'],
+    },
     shortDescription: {
       type: String,
       default:
