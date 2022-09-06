@@ -1,0 +1,1331 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Booky</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Roboto+Mono&family=Roboto:wght@100;300;400;500&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/sidebars/"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="img/logo/logoblack-logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#"
+          ><img
+            src="img/logo/logoligth-blue-logo.png"
+            alt="Booky-logo"
+            class="nav-logo"
+          />
+        </a>
+        <!-- TOGGLER -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div
+          class="collapse navbar-collapse mb-2 mb-lg-0"
+          id="navbarSupportedContent"
+        >
+          <!-- SEARCH -->
+          <ul class="navbar-nav me-auto ml-auto ms-auto">
+            <li class="nav-item">
+              <div class="justify-content-md-center">
+                <form class="form-inline my-2 my-lg-0 my-lg-0">
+                  <input
+                    class="form-control mr-sm-2 d-lg-inline nav-search-input"
+                    type="text"
+                    placeholder="Search..."
+                    aria-label="Search"
+                    style="width: 700px"
+                  />
+
+                  <button
+                    class="btn btn-ouline-success nav-search-btn me-5"
+                    type="submit"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </li>
+          </ul>
+          <!--user-->
+          <!-- <ul class="navbar-nav user-info">
+            <li class="nav-item user-avatar d-lg-inline ms-5 me-2 p-1">
+              <img
+                src="img/user/default.png"
+                alt="user-avatar"
+                class="user-avatar-img p-1"
+              />
+            </li>
+            <li class="nav-item user-name pt-3 ms-2 me-2">
+              <h4>Mostafa</h4>
+            </li>
+            <li class="nav-item user-chart pt-3 ms-2 me-2">
+              <i class="fa-solid fa-cart-shopping"></i
+              ><span class="badge badge-light">4</span>
+            </li>
+          </ul> -->
+          <!-- Login and singup btns-->
+          <a class="btn btn-outline-info rounded-pill me-2">Signup </a>
+          <a class="btn btn-info rounded-pill">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Landing page-->
+    <div class="landing d-flex justify-content-center align-items-center">
+      <div class="text-center text-light">
+        <h1 class="m-3 fw-bold landing-heading">READ MORE!</h1>
+        <p>Booky, All Books In Same Place</p>
+        <p class="landing-p fs-6 mb-5">
+          Explore More than <span class="fw-semibold">4K </span>Books Without
+          any restrictions .Feel free to review, read and book any book
+        </p>
+        <a
+          href="#books-categories"
+          class="btn btn-warning btn-landing btn-lg text-uppercase"
+          >Get Start</a
+        >
+      </div>
+    </div>
+
+    <!-- sidebar -->
+    <div
+      class="flex-shrink-0 p-3 bg-white d-none d-lg-inline col-lg-3 me-3"
+      style="width: 250px"
+      id="sidebar"
+    >
+      <a
+        href="/"
+        class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"
+      >
+        <span class="fs-5 fw-semibold">Categories</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1 main-categotries">
+          <button
+            class="btn btn-toggle align-items-center rounded collapsed btn-warning mb-1"
+            data-bs-toggle="collapse"
+            data-bs-target="#home-collapse"
+            aria-expanded="true"
+          >
+            MAIN
+          </button>
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal ps-1 pb-1 small">
+              <li>
+                <a href="#" class="link-dark rounded ms-2">Mobile Technology</a>
+              </li>
+              <li><a href="#" class="link-dark rounded ms-2">Java</a></li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2">Web Development</a>
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2"
+                  >Software Engineering</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link"
+                  >Microsoft/.NET</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link">Microsoft</a>
+              </li>
+              <li><a href="#" class="link-dark rounded ms-2" link>.NET</a></li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link"
+                  >Microsoft .NET</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2">Programming</a>
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link"
+                  >Next Generation Databases</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link">Open Source</a>
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link"
+                  >Computer Graphics</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link">Mobile</a>
+              </li>
+              <li><a href="#" class="link-dark rounded ms-2 link">Perl</a></li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link">Python</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button
+            class="btn btn-toggle align-items-center rounded collapsed btn-warning"
+            data-bs-toggle="collapse"
+            data-bs-target="#account-collapse"
+            aria-expanded="false"
+          >
+            Account
+          </button>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link">Profile</a>
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link">Settings</a>
+              </li>
+              <li>
+                <a href="#" class="link-dark rounded ms-2 link">Sign out</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="b-example-divider"></div>
+
+    <!--categories-->
+    <div class="container text-center mt-5" id="books-categories">
+      <div class="row categories-row">
+        <div class="col-md-5 col-lg-3 categories-card pt-4">
+          <a href="#" class="link-dark categories-card-icon">
+            <div class="stars mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i></div
+          ></a>
+          <h3 class="card-title mt-4">Top Rating</h3>
+        </div>
+        <div class="col-md-5 col-lg-3 categories-card pt-4">
+          <a href="#" class="link-dark categories-card-icon">
+            <i class="fa-solid fa-book"></i>
+          </a>
+          <h3 class="card-title mt-4">New Releases</h3>
+        </div>
+        <div class="col-md-5 col-lg-3 categories-card pt-4">
+          <a href="#" class="link-dark categories-card-icon">
+            <i class="fa-solid fa-person-walking-luggage"></i>
+          </a>
+          <h3 class="card-title mt-4">Coming Soon</h3>
+        </div>
+        <div class="col-md-5 col-lg-3 categories-card pt-4">
+          <a href="#" class="link-dark categories-card-icon">
+            <i class="fa-solid fa-tags"></i>
+          </a>
+          <h3 class="card-title mt-4">OFF 50%</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--Books-->
+    <div class="container text-center books-container mt-5">
+      <div class="row books-row">
+        <h2 class="books-categories-title mb-5">Android</h2>
+
+        <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
+          <button class="btn btn-arrow books-holder-left-arrow-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Android in Action, Second Edition</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Specification by Example</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <!-- <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller ">$</sub> -->
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Team Foundation Server 2008 in Action</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">SColl</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <button class="btn btn-arrow books-holder-right-arrow-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center books-container mt-5">
+      <div class="row books-row">
+        <h2 class="books-categories-title mb-5">Android</h2>
+
+        <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
+          <button class="btn btn-arrow books-holder-left-arrow-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Android in Action, Second Edition</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Specification by Example</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <!-- <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller ">$</sub> -->
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Team Foundation Server 2008 in Action</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">SColl</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <button class="btn btn-arrow books-holder-right-arrow-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center books-container mt-5">
+      <div class="row books-row">
+        <h2 class="books-categories-title mb-5">Android</h2>
+
+        <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
+          <button class="btn btn-arrow books-holder-left-arrow-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Android in Action, Second Edition</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Specification by Example</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <!-- <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller ">$</sub> -->
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Team Foundation Server 2008 in Action</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">SColl</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <button class="btn btn-arrow books-holder-right-arrow-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center books-container mt-5">
+      <div class="row books-row">
+        <h2 class="books-categories-title mb-5">Android</h2>
+
+        <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
+          <button class="btn btn-arrow books-holder-left-arrow-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Android in Action, Second Edition</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Specification by Example</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <!-- <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller ">$</sub> -->
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Unlocking Android</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Team Foundation Server 2008 in Action</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col book-card">
+            <img
+              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">SColl</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+              <li class="list-group-item card-rating">
+                <div class="card-rating-stars d-lg-inline">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="card-rating-avg text-black-50">(1,5k)</span>
+              </li>
+              <li class="list-group-item card-price">
+                <span
+                  class="oldprice text-decoration-line-through text-black-50"
+                  >200</span
+                ><sub class="doller">$</sub>
+                <span class="newprice d-block"
+                  >100<sub class="doller">$</sub></span
+                >
+              </li>
+            </ul>
+            <div class="card-body">
+              <button href="#" class="btn btn-warning btn-main rounded-pill">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <button class="btn btn-arrow books-holder-right-arrow-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4">
+        <!-- Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.facebook.com/m0stafag0maa"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com/Mostafa_M_gomaa"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/in/mostafamgomaa/"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/MostafaMGomaa"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="https://www.linkedin.com/in/mostafamgomaa/"
+          >Mostafa Gomaa</a
+        >
+      </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

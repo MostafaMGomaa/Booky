@@ -13,6 +13,8 @@ const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();
 
+app.use(express.static(__dirname + './public'));
+
 // Set security HTPP headers.
 app.use(helmet());
 
