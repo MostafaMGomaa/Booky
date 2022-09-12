@@ -13,42 +13,36 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.line {
-  content: '';
-  width: 150px;
-  height: 2px;
-  background-color: var(--light-blue-color);
-  position: absolute;
-  left: 50%;
-  bottom: -20px;
-  transform: translate(-50%);
-}
-
 .btn-main {
   padding: 0.5rem 1rem;
 }
+.btn-main:hover {
+  color: #000000;
+  background-color: #0494c900;
+  border: 3px solid #e0c213;
+}
 
 .btn-arrow {
+  font-size: larger;
   color: var(--dark-color);
   background-color: var(--section-color);
-  border: 1px solid var(--dark-color);
-  border-radius: 10px;
-  padding: 5px 15px;
   height: 50px;
   width: auto;
+  text-align: center;
 }
-.btn-arrow:hover .categories-card {
+
+.categories-card {
   font-family: barlow;
   height: 150px;
   padding: 20px;
-  margin: 1px;
 }
 .categories-card-icon {
   text-decoration: none;
 }
 .categories-card h3 {
-  color: var(--yellow-color);
+  color: var(--light-blue-color);
 }
+
 /* Start Navbar */
 .navbar {
   background-color: var(--dark-color);
@@ -89,16 +83,22 @@ body {
 }
 
 .user-avatar {
-  background-color: #00000000;
-  border-radius: 50%;
-  border: 1px solid white;
+  background-color: #9795956e;
+  /* border: 1px solid white; */
 }
 .user-avatar-img {
-  width: 50px;
+  width: 35px;
+}
+.btn-nav-logout h4 {
+  background-image: linear-gradient(45deg, #78d0f3, #42af8e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-nav-logout h4 {
+  color: white;
 }
 
 .user-name {
-  color: var(--green-color);
   font-size: 8px;
   text-align: center;
   justify-content: center;
@@ -106,6 +106,19 @@ body {
   justify-items: center;
 }
 
+.nav-userName {
+  color: var(--green-color);
+}
+.nav-userName:hover {
+  color: var(--section-color);
+}
+
+.btn-nav-chart {
+  background-color: transparent;
+}
+.btn-nav-chart svg {
+  color: #ffffff;
+}
 .user-chart {
   font-size: larger;
   color: #fafafa;
@@ -121,7 +134,7 @@ body {
 /*Sidebar*/
 .flex-shrink-0 {
   float: left;
-  min-height: calc(300vh - 72px);
+  min-height: 100%;
 }
 .flex-shrink-0 a span {
   color: var(--light-blue-color);
@@ -137,6 +150,7 @@ body {
   background-image: url(../img/book2-blured.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   min-height: calc(100vh - 72px);
 
   z-index: 1;
@@ -147,11 +161,7 @@ body {
 .landing-p span {
   color: var(--light-blue-color);
 }
-.btn-landing:hover {
-  color: #fff;
-  background-color: #0494c900;
-  border: 2px solid #e0c213;
-}
+
 /*End Landing*/
 
 /* Start categories*/
@@ -210,11 +220,6 @@ body {
   top: 50%;
   z-index: 99;
 }
-.books-holder-left-arrow-btn:hover {
-  background-color: var(--dark-color);
-  color: var(--section-color);
-  border: 1px solid var(--dark-color);
-}
 
 .books-holder-right-arrow-btn {
   position: absolute;
@@ -222,18 +227,6 @@ body {
   right: 0;
   top: 50%;
   z-index: 99;
-  height: 50px;
-  width: auto;
-  color: var(--dark-color);
-  background-color: var(--section-color);
-  border: 1px solid var(--dark-color);
-  border-radius: 10px;
-  padding: 5px 15px;
-}
-.books-holder-right-arrow-btn:hover {
-  background-color: var(--dark-color);
-  color: var(--section-color);
-  border: 1px solid var(--dark-color);
 }
 
 .card-title {
@@ -243,9 +236,9 @@ body {
   height: 500px;
   max-height: 500px;
   min-height: 500px;
-  border: 1px solid var(--dark-color);
   padding: 16px;
 }
+
 .card-rating-stars svg {
   color: gold;
 }
@@ -266,8 +259,122 @@ body {
   transition-delay: 10ms;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
+.btn-more:hover {
+  color: black;
+  border: 3px solid var(--light-blue-color);
+}
 /* End Books*/
+
+/* Start Footer */
+.social-media div {
+  width: 60px;
+}
+/* End Footer */
+
+/* End overview */
+
+/* Start BOOK PAGE */
+.book-thumbnail img {
+  width: 300px;
+  height: 400px;
+}
+.book-main-title {
+  background-image: linear-gradient(
+    45deg,
+    var(--light-blue-color),
+    var(--green-color)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.book-qucik-info {
+  border: 1px solid var(--dark-color);
+  border-style: none none solid none;
+}
+.byAtuhor h3 {
+  font-weight: lighter;
+  color: var(--dark-color);
+}
+.byAtuhor span {
+  color: var(--light-blue-color);
+}
+.book-format {
+  background-color: rgba(189, 189, 189, 0.473);
+  border: 1px solid var(--dark-color);
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.book-format:hover {
+  border: 1px solid var(--light-blue-color);
+}
+.book-format h5:hover {
+  color: var(--yellow-color);
+}
+
+.btn-addChart:hover {
+  color: #2c2c2c;
+  border: 2px solid var(--green-color);
+}
+
+/* Start Book details*/
+.book-details__el {
+  height: 60px;
+}
+
+/* End Book details*/
+
+/* Reviews */
+.reviews-container {
+  background-color: #dadada77;
+  border-radius: 10px;
+}
+.review-user__info-avatar {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+}
+.review-user__info-rate svg {
+  color: gold;
+}
+
+/*End Reviews*/
+
+/*Start Progress*/
+.progress {
+  text-align: center;
+
+  margin: 20px;
+  width: 50%;
+}
+/*End Progress*/
+/* END BOOK PAGE */
+
+/* START USER PAGE */
+.user-page_container {
+  background-color: #f1f1f167;
+}
+.user-sidebar {
+  width: 280px;
+  height: 885px;
+}
+.account-setting__form input {
+  width: 520px;
+}
+.form__user-photo {
+  width: 35px;
+}
+.account-setting__title {
+  background-image: linear-gradient(45deg, #78f3e3, #42af78);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.account-setting__form label {
+  color: #00000091;
+}
+/* END USER PAGE */
 
 @media only screen and (max-width: 992px) {
   .navbar-nav {
@@ -292,5 +399,11 @@ body {
   .book-card {
     margin-bottom: 16px;
     min-height: 520px;
+  }
+  .user-sidebar {
+    height: 100%;
+  }
+  .account-setting__form input {
+    width: 300px;
   }
 }

@@ -1,0 +1,381 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Username || Booky</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Roboto+Mono&family=Roboto:wght@100;300;400;500&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/sidebars/"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="img/logo/—Pngtree—book icon_159611.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="img/logo/logoligth-blue-logo.png"
+            alt="Booky-logo"
+            class="nav-logo"
+          />
+        </a>
+        <!-- TOGGLER -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div
+          class="collapse navbar-collapse mb-2 mb-lg-0"
+          id="navbarSupportedContent"
+        >
+          <!-- SEARCH -->
+          <ul class="navbar-nav me-auto ml-auto ms-auto">
+            <li class="nav-item">
+              <div class="justify-content-md-center">
+                <form class="form-inline my-2 my-lg-0 my-lg-0">
+                  <input
+                    class="form-control mr-sm-2 d-lg-inline nav-search-input"
+                    type="text"
+                    placeholder="Search..."
+                    aria-label="Search"
+                    style="width: 700px"
+                  />
+
+                  <button
+                    class="btn btn-ouline-success nav-search-btn me-5"
+                    type="submit"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </li>
+          </ul>
+
+          <!--user-->
+          <ul class="navbar-nav user-info">
+            <li
+              class="nav-item user-avatar d-lg-inline ms-5 me-2 mt-2 p-1 rounded-circle"
+            >
+              <button class="btn rounded-circle p-0">
+                <img
+                  src="img/user/default-colored.png"
+                  alt="user-avatar"
+                  class="user-avatar-img p-1"
+                />
+              </button>
+            </li>
+            <li class="nav-item user-name pt-3 ms-2 me-2">
+              <a
+                href="#"
+                target="_blank"
+                class="text-decoration-none nav-userName"
+                ><h5>Mostafa</h5></a
+              >
+            </li>
+            <li class="nav-item user-chart pt-3 ms-2 me-2">
+              <a href="#user" class="btn btn-nav-chart"
+                ><i class="fa-solid fa-cart-shopping"></i
+                ><span class="badge badge-light">4</span></a
+              >
+            </li>
+          </ul>
+          <!-- Login and singup btns-->
+          <!-- <a href="signin.html" class="btn btn-outline-info rounded-pill me-2"
+            >Signup
+          </a>
+          <a href="login.html" class="btn btn-info rounded-pill">Login</a> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid user-page_container">
+      <div class="row">
+        <div
+          class="col col-lg-3 text-start user-sidebar d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-md-0 me-md-auto text-white text-decoration-none"
+          >
+            <span class="fs-4 text-uppercase text-light ms-5"
+              ><i class="fa-solid fa-user-secret me-2 text-info"></i> me</span
+            >
+          </a>
+
+          <hr />
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">
+                <i class="fa-solid fa-gear me-2"></i>
+                Settings
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-regular fa-star me-2"></i> My reviews
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-cart-arrow-down me-2"></i> Chart
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-regular fa-credit-card me-2"></i> Billing
+              </a>
+            </li>
+          </ul>
+
+          <hr />
+
+          <div class="dropdown">
+            <a
+              href="#"
+              class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="img/user/default-colored.png"
+                alt=""
+                width="32"
+                height="32"
+                class="rounded-circle me-2"
+              />
+              <strong>mostafa</strong>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-dark text-small shadow"
+              aria-labelledby="dropdownUser1"
+            >
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col col-lg-9 user-settings justify-content-center ms-5">
+          <div class="account-setting">
+            <h3 class="account-setting__title mb-3 mt-5">
+              YOUR ACCOUNT SETTINGS
+            </h3>
+
+            <form class="account-setting__form mb-5" id="account-setting__form">
+              <div class="account-setting__name">
+                <label class="text-start fw-semibold mb-1" for="name-lable"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control mb-4"
+                  id="name"
+                  placeholder="name"
+                />
+              </div>
+
+              <div class="account-setting__email">
+                <label class="text-start fw-semibold mb-1" for="floatingInput"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control mb-4"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div class="account-setting__photo mb-4 text-start">
+                <img
+                  class="form__user-photo me-1 p-1 rounded-circle"
+                  src="img/user/default-borderd.png"
+                  alt="user photo"
+                />
+
+                <input
+                  class="form__upload"
+                  id="upload-photo"
+                  type="file"
+                  accept="image/*"
+                  name="photo"
+                  placeholder="Upload photo"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-info rounded-pill p-2 ps-4 pe-4 d-flex ms-auto me-5"
+              >
+                Save Settings
+              </button>
+            </form>
+          </div>
+          <hr />
+
+          <div class="password-setting">
+            <h3 class="text-uppercase account-setting__title mb-3 mt-5">
+              password change
+            </h3>
+
+            <form class="account-setting__form mb-5" id="account-setting__form">
+              <div class="account-setting__current-password">
+                <label
+                  class="text-capitalize text-start fw-semibold mb-1"
+                  for="current-password-lable"
+                  >current password</label
+                >
+
+                <input
+                  type="text"
+                  class="form-control mb-4"
+                  id="current-password"
+                  placeholder="***********"
+                />
+              </div>
+
+              <div class="account-setting__newpassword">
+                <label
+                  class="text-capitalize text-start fw-semibold mb-1"
+                  for="floatingInput"
+                  >new password
+                </label>
+                <input
+                  type="email"
+                  class="form-control mb-4"
+                  id="email"
+                  placeholder="***********"
+                />
+              </div>
+              <div class="account-setting__confirm-newpassword">
+                <label
+                  class="text-capitalize text-start fw-semibold mb-1"
+                  for="floatingInput"
+                  >confirm password
+                </label>
+                <input
+                  type="email"
+                  class="form-control mb-4"
+                  id="email"
+                  placeholder="***********"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-info rounded-pill p-2 ps-4 pe-4 d-flex ms-auto me-5"
+              >
+                Save Password
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4">
+        <!-- Social media -->
+        <div
+          class="row mb-4 text-center justify-content-center justify-items-center social-media"
+        >
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.facebook.com/m0stafag0maa"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://twitter.com/Mostafa_M_gomaa"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.linkedin.com/in/mostafamgomaa/"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://github.com/MostafaMGomaa"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a
+          class="text-white"
+          href="https://www.linkedin.com/in/mostafamgomaa/"
+          target="_blank"
+          >Mostafa Gomaa</a
+        >
+      </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

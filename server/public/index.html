@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Booky</title>
+    <title>Home || Booky</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -21,7 +21,7 @@
 
     <link
       rel="shortcut icon"
-      href="img/logo/logoblack-logo.png"
+      href="img/logo/—Pngtree—book icon_159611.png"
       type="image/x-icon"
     />
   </head>
@@ -30,7 +30,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <!-- LOGO -->
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img
             src="img/logo/logoligth-blue-logo.png"
             alt="Booky-logo"
@@ -77,26 +77,49 @@
               </div>
             </li>
           </ul>
+
           <!--user-->
-          <!-- <ul class="navbar-nav user-info">
-            <li class="nav-item user-avatar d-lg-inline ms-5 me-2 p-1">
-              <img
-                src="img/user/default.png"
-                alt="user-avatar"
-                class="user-avatar-img p-1"
-              />
+          <ul class="navbar-nav user-info">
+            <li
+              class="nav-item user-avatar d-lg-inline ms-5 me-2 mt-2 p-1 rounded-circle"
+            >
+              <button class="btn rounded-circle p-0">
+                <img
+                  src="img/user/default-colored.png"
+                  alt="user-avatar"
+                  class="user-avatar-img p-1"
+                />
+              </button>
             </li>
             <li class="nav-item user-name pt-3 ms-2 me-2">
-              <h4>Mostafa</h4>
+              <a
+                href="#"
+                target="_blank"
+                class="text-decoration-none nav-userName"
+                ><h5>Mostafa</h5></a
+              >
             </li>
             <li class="nav-item user-chart pt-3 ms-2 me-2">
-              <i class="fa-solid fa-cart-shopping"></i
-              ><span class="badge badge-light">4</span>
+              <a href="#user" class="btn btn-nav-chart"
+                ><i class="fa-solid fa-cart-shopping"></i
+                ><span class="badge badge-light">4</span></a
+              >
             </li>
-          </ul> -->
+            <li class="nav-item user-chart pt-3 ms-2 me-2">
+              <a href="#logout" class="btn-nav-logout text-decoration-none"
+                ><h4>Logout</h4></a
+              >
+            </li>
+          </ul>
           <!-- Login and singup btns-->
-          <a class="btn btn-outline-info rounded-pill me-2">Signup </a>
-          <a class="btn btn-info rounded-pill">Login</a>
+          <!-- <a
+            href="signin.html"
+            class="btn btn-outline-info rounded-pill me-2 p-2 ps-4 pe-4"
+            >Signup
+          </a>
+          <a href="login.html" class="btn btn-info rounded-pill p-2 ps-4 pe-4"
+            >Login</a
+          > -->
         </div>
       </div>
     </nav>
@@ -112,7 +135,7 @@
         </p>
         <a
           href="#books-categories"
-          class="btn btn-warning btn-landing btn-lg text-uppercase"
+          class="btn btn-warning btn-main btn-lg text-uppercase"
           >Get Start</a
         >
       </div>
@@ -133,7 +156,7 @@
       <ul class="list-unstyled ps-0">
         <li class="mb-1 main-categotries">
           <button
-            class="btn btn-toggle align-items-center rounded collapsed btn-warning mb-1"
+            class="btn btn-toggle align-items-center rounded collapsed btn-outline-info mb-2"
             data-bs-toggle="collapse"
             data-bs-target="#home-collapse"
             aria-expanded="true"
@@ -196,29 +219,6 @@
         </li>
 
         <li class="border-top my-3"></li>
-        <li class="mb-1">
-          <button
-            class="btn btn-toggle align-items-center rounded collapsed btn-warning"
-            data-bs-toggle="collapse"
-            data-bs-target="#account-collapse"
-            aria-expanded="false"
-          >
-            Account
-          </button>
-          <div class="collapse" id="account-collapse">
-            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-              <li>
-                <a href="#" class="link-dark rounded ms-2 link">Profile</a>
-              </li>
-              <li>
-                <a href="#" class="link-dark rounded ms-2 link">Settings</a>
-              </li>
-              <li>
-                <a href="#" class="link-dark rounded ms-2 link">Sign out</a>
-              </li>
-            </ul>
-          </div>
-        </li>
       </ul>
     </div>
     <div class="b-example-divider"></div>
@@ -260,10 +260,13 @@
     <!--Books-->
     <div class="container text-center books-container mt-5">
       <div class="row books-row">
-        <h2 class="books-categories-title mb-5">Android</h2>
-
+        <a href="" class="link-dark" style="text-decoration: none"
+          ><h2 class="books-categories-title mb-5">Android</h2></a
+        >
         <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
-          <button class="btn btn-arrow books-holder-left-arrow-btn">
+          <button
+            class="btn btn-arrow books-holder-left-arrow-btn rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          >
             <i class="fa-solid fa-arrow-left"></i>
           </button>
 
@@ -330,10 +333,6 @@
                 <span class="card-rating-avg text-black-50">(1,5k)</span>
               </li>
               <li class="list-group-item card-price">
-                <!-- <span
-                  class="oldprice text-decoration-line-through text-black-50"
-                  >200</span
-                ><sub class="doller ">$</sub> -->
                 <span class="newprice d-block"
                   >100<sub class="doller">$</sub></span
                 >
@@ -502,19 +501,25 @@
             </div>
           </div>
 
-          <button class="btn btn-arrow books-holder-right-arrow-btn">
+          <button
+            class="btn btn-arrow books-holder-right-arrow-btn rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          >
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>
+      <a href="#" class="text-uppercase m-4 me-5 float-end"> See More ... </a>
     </div>
 
     <div class="container text-center books-container mt-5">
       <div class="row books-row">
-        <h2 class="books-categories-title mb-5">Android</h2>
-
+        <a href="" class="link-dark" style="text-decoration: none"
+          ><h2 class="books-categories-title mb-5">Android</h2></a
+        >
         <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
-          <button class="btn btn-arrow books-holder-left-arrow-btn">
+          <button
+            class="btn btn-arrow books-holder-left-arrow-btn rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          >
             <i class="fa-solid fa-arrow-left"></i>
           </button>
 
@@ -753,269 +758,30 @@
             </div>
           </div>
 
-          <button class="btn btn-arrow books-holder-right-arrow-btn">
+          <button
+            class="btn btn-arrow books-holder-right-arrow-btn rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          >
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>
-    </div>
-    <div class="container text-center books-container mt-5">
-      <div class="row books-row">
-        <h2 class="books-categories-title mb-5">Android</h2>
-
-        <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
-          <button class="btn btn-arrow books-holder-left-arrow-btn">
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-
-          <div class="col book-card">
-            <img
-              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg"
-              class="card-img-top"
-              alt="..."
-              style="width: 200px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Android in Action, Second Edition</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"></li>
-              <li class="list-group-item card-rating">
-                <div class="card-rating-stars d-lg-inline">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <span class="card-rating-avg text-black-50">(1,5k)</span>
-              </li>
-              <li class="list-group-item card-price">
-                <span
-                  class="oldprice text-decoration-line-through text-black-50"
-                  >200</span
-                ><sub class="doller">$</sub>
-
-                <span class="newprice d-block"
-                  >100<sub class="doller">$</sub></span
-                >
-              </li>
-            </ul>
-            <div class="card-body">
-              <button href="#" class="btn btn-warning btn-main rounded-pill">
-                Details
-              </button>
-            </div>
-          </div>
-
-          <div class="col book-card">
-            <img
-              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg"
-              class="card-img-top"
-              alt="..."
-              style="width: 200px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Specification by Example</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"></li>
-              <li class="list-group-item card-rating">
-                <div class="card-rating-stars d-lg-inline">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <span class="card-rating-avg text-black-50">(1,5k)</span>
-              </li>
-              <li class="list-group-item card-price">
-                <!-- <span
-                  class="oldprice text-decoration-line-through text-black-50"
-                  >200</span
-                ><sub class="doller ">$</sub> -->
-                <span class="newprice d-block"
-                  >100<sub class="doller">$</sub></span
-                >
-              </li>
-            </ul>
-            <div class="card-body">
-              <button href="#" class="btn btn-warning btn-main rounded-pill">
-                Details
-              </button>
-            </div>
-          </div>
-
-          <div class="col book-card">
-            <img
-              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
-              class="card-img-top"
-              alt="..."
-              style="width: 200px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Unlocking Android</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"></li>
-              <li class="list-group-item card-rating">
-                <div class="card-rating-stars d-lg-inline">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <span class="card-rating-avg text-black-50">(1,5k)</span>
-              </li>
-              <li class="list-group-item card-price">
-                <span
-                  class="oldprice text-decoration-line-through text-black-50"
-                  >200</span
-                ><sub class="doller">$</sub>
-                <span class="newprice d-block"
-                  >100<sub class="doller">$</sub></span
-                >
-              </li>
-            </ul>
-            <div class="card-body">
-              <button href="#" class="btn btn-warning btn-main rounded-pill">
-                Details
-              </button>
-            </div>
-          </div>
-
-          <div class="col book-card">
-            <img
-              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg"
-              class="card-img-top"
-              alt="..."
-              style="width: 200px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Unlocking Android</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"></li>
-              <li class="list-group-item card-rating">
-                <div class="card-rating-stars d-lg-inline">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <span class="card-rating-avg text-black-50">(1,5k)</span>
-              </li>
-              <li class="list-group-item card-price">
-                <span
-                  class="oldprice text-decoration-line-through text-black-50"
-                  >200</span
-                ><sub class="doller">$</sub>
-                <span class="newprice d-block"
-                  >100<sub class="doller">$</sub></span
-                >
-              </li>
-            </ul>
-            <div class="card-body">
-              <button href="#" class="btn btn-warning btn-main rounded-pill">
-                Details
-              </button>
-            </div>
-          </div>
-
-          <div class="col book-card">
-            <img
-              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
-              class="card-img-top"
-              alt="..."
-              style="width: 200px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Team Foundation Server 2008 in Action</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"></li>
-              <li class="list-group-item card-rating">
-                <div class="card-rating-stars d-lg-inline">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <span class="card-rating-avg text-black-50">(1,5k)</span>
-              </li>
-              <li class="list-group-item card-price">
-                <span
-                  class="oldprice text-decoration-line-through text-black-50"
-                  >200</span
-                ><sub class="doller">$</sub>
-                <span class="newprice d-block"
-                  >100<sub class="doller">$</sub></span
-                >
-              </li>
-            </ul>
-            <div class="card-body">
-              <button href="#" class="btn btn-warning btn-main rounded-pill">
-                Details
-              </button>
-            </div>
-          </div>
-
-          <div class="col book-card">
-            <img
-              src="https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg"
-              class="card-img-top"
-              alt="..."
-              style="width: 200px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">SColl</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"></li>
-              <li class="list-group-item card-rating">
-                <div class="card-rating-stars d-lg-inline">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <span class="card-rating-avg text-black-50">(1,5k)</span>
-              </li>
-              <li class="list-group-item card-price">
-                <span
-                  class="oldprice text-decoration-line-through text-black-50"
-                  >200</span
-                ><sub class="doller">$</sub>
-                <span class="newprice d-block"
-                  >100<sub class="doller">$</sub></span
-                >
-              </li>
-            </ul>
-            <div class="card-body">
-              <button href="#" class="btn btn-warning btn-main rounded-pill">
-                Details
-              </button>
-            </div>
-          </div>
-
-          <button class="btn btn-arrow books-holder-right-arrow-btn">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
+      <a
+        href="#"
+        class="btn btn-info btn-main btn-more text-uppercase m-4 me-5 float-end"
+      >
+        See More ...
+      </a>
     </div>
 
     <div class="container text-center books-container mt-5">
       <div class="row books-row">
-        <h2 class="books-categories-title mb-5">Android</h2>
-
+        <a href="" class="link-dark" style="text-decoration: none"
+          ><h2 class="books-categories-title mb-5">Android</h2></a
+        >
         <div class="books-holder card-group overflow-auto d-flex flex-nowrap">
-          <button class="btn btn-arrow books-holder-left-arrow-btn">
+          <button
+            class="btn btn-arrow books-holder-left-arrow-btn rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          >
             <i class="fa-solid fa-arrow-left"></i>
           </button>
 
@@ -1254,72 +1020,93 @@
             </div>
           </div>
 
-          <button class="btn btn-arrow books-holder-right-arrow-btn">
+          <button
+            class="btn btn-arrow books-holder-right-arrow-btn rounded-circle shadow-lg p-3 mb-5 bg-white rounded"
+          >
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>
+      <a
+        href="#"
+        class="btn btn-info btn-main btn-more text-uppercase m-4 me-5 float-end"
+      >
+        See More ...
+      </a>
     </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
       <div class="container p-4">
         <!-- Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="https://www.facebook.com/m0stafag0maa"
-            role="button"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+        <div
+          class="row mb-4 text-center justify-content-center justify-items-center social-media"
+        >
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.facebook.com/m0stafag0maa"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://twitter.com/Mostafa_M_gomaa"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#"
+              target="_blank"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
 
-          <!-- Twitter -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="https://twitter.com/Mostafa_M_gomaa"
-            role="button"
-            ><i class="fab fa-twitter"></i
-          ></a>
-
-          <!-- Google -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-google"></i
-          ></a>
-
-          <!-- Instagram -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-instagram"></i
-          ></a>
-
-          <!-- Linkedin -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="https://www.linkedin.com/in/mostafamgomaa/"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-
-          <!-- Github -->
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="https://github.com/MostafaMGomaa"
-            role="button"
-            ><i class="fab fa-github"></i
-          ></a>
-        </section>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.linkedin.com/in/mostafamgomaa/"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="col-lg-1 col-sm-2 m-0 p-0">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://github.com/MostafaMGomaa"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
       </div>
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2022 Copyright:
-        <a class="text-white" href="https://www.linkedin.com/in/mostafamgomaa/"
+        <a
+          class="text-white"
+          href="https://www.linkedin.com/in/mostafamgomaa/"
+          target="_blank"
           >Mostafa Gomaa</a
         >
       </div>
