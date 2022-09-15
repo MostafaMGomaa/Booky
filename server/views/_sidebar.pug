@@ -1,0 +1,56 @@
+mixin link(text, href)
+    li
+        a.link-dark.rounded.ms-2(href=`${href}`)=text 
+
+#sidebar.flex-shrink-0.p-3.bg-white.d-none.d-lg-inline.col-lg-3.me-3(style='width: 250px')
+    a.d-flex.align-items-center.pb-3.mb-3.link-dark.text-decoration-none.border-bottom(href='/')
+        span.fs-5.fw-semibold Categories
+
+    ul.list-unstyled.ps-0
+        li.mb-1.main-categotries
+            button.btn.btn-toggle.align-items-center.rounded.collapsed.btn-outline-info.mb-2(data-bs-toggle='collapse', data-bs-target='#home-collapse', aria-expanded='true')
+                | MAIN
+            #home-collapse.collapse.show
+                ul.btn-toggle-nav.list-unstyled.fw-normal.ps-1.pb-1.small
+                    +link('Mobile Technology', '#')
+                    +link('Java', '#')
+                    +link('Web Development', '#')
+                    +link('Software Engineering', '#')
+                    +link(' Microsoft/.NET', '#')
+                    +link('Microsoft', '#')
+                    +link('Programming', '#')
+                    +link('Open Source', '#')
+                    +link('Mobile', '#')
+                    li
+                        a.link-dark.rounded.ms-2(href='#') Mobile Technology    
+                    li
+                        a.link-dark.rounded.ms-2(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#')
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2(href='#', link='') .NET
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') Microsoft .NET
+                    li
+                        a.link-dark.rounded.ms-2(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') 
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') Perl
+                    li
+                        a.link-dark.rounded.ms-2.link(href='#') Python
+        li.border-top.my-3
+
+.b-example-divider

@@ -1,0 +1,38 @@
+nav.navbar.navbar-expand-lg.sticky-top
+    .container-fluid
+        // LOGO
+        a.navbar-brand(href='#')
+            img.nav-logo(src='img/logo/logoligth-blue-logo.png' alt='Booky-logo')
+        // TOGGLER
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            i.fa-solid.fa-bars
+
+        #navbarSupportedContent.collapse.navbar-collapse.mb-2.mb-lg-0
+            // SEARCH
+            ul.navbar-nav.me-auto.ml-auto.ms-auto
+                li.nav-item
+                    .justify-content-md-center
+                        form.form-inline.my-2.my-lg-0.my-lg-0
+                            input.form-control.mr-sm-2.d-lg-inline.nav-search-input(type='text' placeholder='Search...' aria-label='Search' style='width: 700px')
+                            button.btn.btn-ouline-success.nav-search-btn.me-5(type='submit')
+                                i.fa-solid.fa-magnifying-glass
+            // user
+            ul.navbar-nav.user-info
+                li.nav-item.user-avatar.d-lg-inline.ms-5.me-2.mt-2.p-1.rounded-circle
+                    button.btn.rounded-circle.p-0
+                        img.user-avatar-img.p-1(src='img/user/default-colored.png' alt='user-avatar')
+
+                li.nav-item.user-name.pt-3.ms-2.me-2
+                    a.text-decoration-none.nav-userName(href='#' target='_blank')
+                        h5 Mostafa
+
+                li.nav-item.user-chart.pt-3.ms-2.me-2
+                    a.btn.btn-nav-chart(href='#user')
+                        i.fa-solid.fa-cart-shopping
+                        span.badge.badge-light 4
+
+                li.nav-item.user-chart.pt-3.ms-2.me-2
+                    a.btn-nav-logout.text-decoration-none(href='#logout')
+                        h4 Logout
+            //- a.btn.btn-outline-info.rounded-pill.me-2.p-2.ps-4.pe-4(href='#') Signup
+            //- a.btn.btn-info.rounded-pill.p-2.ps-4.pe-4(href='login.html') Login

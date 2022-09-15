@@ -1,0 +1,188 @@
+extends base
+
+mixin cateigories(icon, text)
+    .col-md-5.col-lg-3.categories-card.pt-4
+        a.link-dark.categories-card-icon(href='#')
+            i(class=`fa-solid fa-${icon}`)
+        h3.card-title.mt-4= text
+
+block content
+    // landing 
+    .landing.d-flex.justify-content-center.align-items-center
+        .text-center.text-light
+            h1.m-3.fw-bold.landing-heading READ MORE!
+            p Booky, All Books In Same Place
+            p.landing-p.fs-6.mb-5 Explore More than 
+                span.fw-semibold 4K Books 
+                |Without any restrictions .Feel free to review, read and book any book
+            a.btn.btn-warning.btn-main.btn-lg.text-uppercase(href='#books-categories') Get Start
+
+    // sidebar
+    include _sidebar
+
+    // categories
+    #books-categories.container.text-center.mt-5
+        .row.categories-row
+            .col-md-5.col-lg-3.categories-card.pt-4
+                a.link-dark.categories-card-icon(href='#')
+                    .stars.mt-2
+                        i.fa-solid.fa-star
+                        i.fa-solid.fa-star
+                        i.fa-solid.fa-star
+                        i.fa-solid.fa-star
+                h3.card-title.mt-4 Top Rating
+
+            +cateigories('book', 'New Releases')    
+            +cateigories('person-walking-luggage', 'Coming Soon')    
+            +cateigories('tags', 'OFF 50%')    
+
+
+
+    .container.text-center.books-container.mt-5
+        .row.books-row
+            a.link-dark(href='' style='text-decoration: none')
+                h2.books-categories-title.mb-5 Android
+            .books-holder.card-group.overflow-auto.d-flex.flex-nowrap
+                button.btn.btn-arrow.books-holder-left-arrow-btn.rounded-circle.shadow-lg.p-3.mb-5.bg-white.rounded
+                    i.fa-solid.fa-arrow-left
+                .col.book-card
+                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg' alt='...' style='width: 200px')
+                    .card-body
+                        h5.card-title Android in Action, Second Edition
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+                .col.book-card
+                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg' alt='...' style='width: 200px')
+                    .card-body
+                        h5.card-title Specification by Example
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+                .col.book-card
+                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg' alt='...' style='width: 200px')
+                    .card-body
+                        h5.card-title Unlocking Android
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+                .col.book-card
+                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg' alt='...' style='width: 200px')
+                    .card-body
+                        h5.card-title Unlocking Android
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+                .col.book-card
+                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg' alt='...' style='width: 200px')
+                    .card-body
+                        h5.card-title Team Foundation Server 2008 in Action
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+                .col.book-card
+                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg' alt='...' style='width: 200px')
+                    .card-body
+                        h5.card-title SColl
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+                button.btn.btn-arrow.books-holder-right-arrow-btn.rounded-circle.shadow-lg.p-3.mb-5.bg-white.rounded
+                    i.fa-solid.fa-arrow-right
+        a.text-uppercase.m-4.me-5.float-end(href='#')  See More ... 
+
+

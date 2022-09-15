@@ -1,0 +1,746 @@
+[
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg",
+    "filename": "specification-by-example"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg",
+    "filename": "flex-3-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed2.jpg",
+    "filename": "flex-4-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alag.jpg",
+    "filename": "collective-intelligence-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg",
+    "filename": "zend-framework-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg",
+    "filename": "unlocking-android"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg",
+    "filename": "android-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alves.jpg",
+    "filename": "osgi-in-depth"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong.jpg",
+    "filename": "flexible-rails"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong3.jpg",
+    "filename": "hello!-flex-4"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/asher.jpg",
+    "filename": "coffeehouse"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg",
+    "filename": "team-foundation-server-2008-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/baley.jpg",
+    "filename": "brownfield-application-development-in-.net"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/banker.jpg",
+    "filename": "mongodb-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barlotta2.jpg",
+    "filename": "jaguar-development-with-powerbuilder-7"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barlotta3.jpg",
+    "filename": "taming-jaguar"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barrilleaux.jpg",
+    "filename": "3d-user-interfaces-with-java-3d"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer.jpg",
+    "filename": "hibernate-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bauer2.jpg",
+    "filename": "java-persistence-with-hibernate"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bayern.jpg",
+    "filename": "jstl-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/begin.jpg",
+    "filename": "ibatis-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg",
+    "filename": "flex-on-java"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/almiray.jpg",
+    "filename": "griffon-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bibeault2.jpg",
+    "filename": "jquery-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/birman.jpg",
+    "filename": "building-secure-and-reliable-network-applications"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/black.jpg",
+    "filename": "ruby-for-rails"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/black2.jpg",
+    "filename": "the-well-grounded-rubyist"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/boag.jpg",
+    "filename": "website-owner's-manual"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bochicchio.jpg",
+    "filename": "asp.net-4.0-in-practice"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/briggs.jpg",
+    "filename": "hello!-python"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/brooks.jpg",
+    "filename": "pfc-programmer's-reference-manual"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/brown.jpg",
+    "filename": "graphics-file-formats"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/burnett.jpg",
+    "filename": "visual-object-oriented-programming"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cahill.jpg",
+    "filename": "ios-in-practice"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/callen.jpg",
+    "filename": "iphone-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/campbell.jpg",
+    "filename": "silverlight-2-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ceder.jpg",
+    "filename": "the-quick-python-book-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cervenka.jpg",
+    "filename": "internet-and-intranet-applications-with-powerbuilder-6"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cockayne.jpg",
+    "filename": "mobile-agents"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cogoluegnes.jpg",
+    "filename": "spring-dynamic-modules-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/colledge.jpg",
+    "filename": "sql-server-2008-administration-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/collins.jpg",
+    "filename": "android-in-practice"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/conway.jpg",
+    "filename": "object-oriented-perl"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cooper.jpg",
+    "filename": "gwt-in-practice"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/crane.jpg",
+    "filename": "ajax-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/crane2.jpg",
+    "filename": "ajax-in-practice"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/crane3.jpg",
+    "filename": "prototype-and-scriptaculous-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/crichardson.jpg",
+    "filename": "pojos-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bibeault.jpg",
+    "filename": "jquery-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/bernard.jpg",
+    "filename": "hibernate-search-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dallen.jpg",
+    "filename": "seam-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dashorst.jpg",
+    "filename": "wicket-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/davis.jpg",
+    "filename": "open-source-soa"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dbrown.jpg",
+    "filename": "struts-2-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/delia.jpg",
+    "filename": "essential-guide-to-peoplesoft-development-and-customization"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dennis.jpg",
+    "filename": ".net-multithreading"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/deshmukh2.jpg",
+    "filename": "scwcd-exam-study-kit-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dirksen.jpg",
+    "filename": "soa-governance-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rimple.jpg",
+    "filename": "spring-roo-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dmjohnson.jpg",
+    "filename": "rss-and-atom-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/donley.jpg",
+    "filename": "ldap-programming-management-and-integration"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/dossot.jpg",
+    "filename": "mule-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/drye.jpg",
+    "filename": "java-foundation-classes"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal11.jpg",
+    "filename": "managing-components-with-modeler"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal13.jpg",
+    "filename": "understanding-and-using-chain"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal12.jpg",
+    "filename": "command-line-processing-with-cli"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal14.jpg",
+    "filename": "working-with-the-logging-and-discovery-components"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal2.jpg",
+    "filename": "uploading-files-with-fileupload"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal3.jpg",
+    "filename": "handling-protocols-with-the-net-component"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal4.jpg",
+    "filename": "xml-parsing-with-digester"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal5.jpg",
+    "filename": "jxpath-and-betwixt:-working-with-xml"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal6.jpg",
+    "filename": "validating-data-with-validator"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal7.jpg",
+    "filename": "enhancing-java-core-libraries-with-collections"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal8.jpg",
+    "filename": "enhancing-java-core-libraries-with-beanutils-and-lang"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/goyal9.jpg",
+    "filename": "pool-and-dbcp:-creating-and-using-object-pools"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/grayson.jpg",
+    "filename": "python-and-tkinter-programming"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/grimes.jpg",
+    "filename": "microsoft.net-for-programmers"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/gsmith.jpg",
+    "filename": "grails-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/gutz2.jpg",
+    "filename": "up-to-speed-with-swing-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hall.jpg",
+    "filename": "osgi-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hanson.jpg",
+    "filename": "gwt-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/harms.jpg",
+    "filename": "the-quick-python-book"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/harryman.jpg",
+    "filename": "sharepoint-2010-site-owner's-manual"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hatcher.jpg",
+    "filename": "java-development-with-ant"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/crowther.jpg",
+    "filename": "hello!-html5-and-css3"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/cross.jpg",
+    "filename": "data-munging-with-perl"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hatton.jpg",
+    "filename": "powerbuilder-6.0-questions-and-answers"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hatton2.jpg",
+    "filename": "the-awesome-power-of-powerj"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hatton3.jpg",
+    "filename": "the-awesome-power-of-power++"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hay.jpg",
+    "filename": "azure-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hazrati.jpg",
+    "filename": "distributed-agile-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hazzard.jpg",
+    "filename": "metaprogramming-in-.net"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/herrington.jpg",
+    "filename": "code-generation-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hethmon.jpg",
+    "filename": "illustrated-guide-to-http"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/husted.jpg",
+    "filename": "struts-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ibsen.jpg",
+    "filename": "camel-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hughes.jpg",
+    "filename": "java-network-programming-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/huettermann.jpg",
+    "filename": "agile-alm"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ingersoll.jpg",
+    "filename": "taming-text"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jamae.jpg",
+    "filename": "jboss-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/janert.jpg",
+    "filename": "gnuplot-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jenness.jpg",
+    "filename": "extending-and-embedding-perl"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jharrington.jpg",
+    "filename": "ios-4-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/johnson.jpg",
+    "filename": "elements-of-programming-with-perl"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/jones.jpg",
+    "filename": "learn-windows-powershell-in-a-month-of-lunches"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kabacoff.jpg",
+    "filename": "r-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kanneganti.jpg",
+    "filename": "soa-security"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/katz.jpg",
+    "filename": "rails-3-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kawalerowicz.jpg",
+    "filename": "continuous-integration-in-.net"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/keller.jpg",
+    "filename": "technology-paradise-lost"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kermit.jpg",
+    "filename": "kermit-95+"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/koenig.jpg",
+    "filename": "groovy-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/klein.jpg",
+    "filename": "laszlo-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/koenig2.jpg",
+    "filename": "groovy-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/korson.jpg",
+    "filename": "object-technology-centers-of-excellence"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/koskela.jpg",
+    "filename": "test-driven"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/koskela2.jpg",
+    "filename": "effective-unit-testing"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kousen.jpg",
+    "filename": "making-java-groovy"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kovach.jpg",
+    "filename": "the-awesome-power-of-direct3ddirectx"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kovitz.jpg",
+    "filename": "practical-software-requirements"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/kuate.jpg",
+    "filename": "nhibernate-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lachev.jpg",
+    "filename": "microsoft-reporting-services-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/laddad.jpg",
+    "filename": "aspectj-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/laddad2.jpg",
+    "filename": "aspectj-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lam.jpg",
+    "filename": "hadoop-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/landres.jpg",
+    "filename": "sqr-in-peoplesoft-and-other-applications"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/landres2.jpg",
+    "filename": "sqr-in-peoplesoft-and-other-applications-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hatcher2.jpg",
+    "filename": "lucene-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/laws.jpg",
+    "filename": "tuscany-sca-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lewis.jpg",
+    "filename": "clientserver-yellow-pages"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lewisship.jpg",
+    "filename": "tapestry-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lewis2.jpg",
+    "filename": "object-oriented-application-frameworks"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/hatcher3.jpg",
+    "filename": "lucene-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lim.jpg",
+    "filename": "macruby-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/logan.jpg",
+    "filename": "erlang-and-otp-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lonsdale.jpg",
+    "filename": "sharepoint-2007-developer's-guide-to-business-data-catalog"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lorin.jpg",
+    "filename": "doing-it-right"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lott.jpg",
+    "filename": "adobe-air-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/loughran.jpg",
+    "filename": "ant-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lowagie2.jpg",
+    "filename": "itext-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/louvel.jpg",
+    "filename": "restlet-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lowagie.jpg",
+    "filename": "itext-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lussier.jpg",
+    "filename": "power-3d"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/malkin.jpg",
+    "filename": "comprehensive-networking-glossary-and-acronym-guide"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/machols.jpg",
+    "filename": "subversion-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mann.jpg",
+    "filename": "javaserver-faces-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lynch.jpg",
+    "filename": "sna-and-tcpip-enterprise-networking"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/maher.jpg",
+    "filename": "minimal-perl"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mahmoud.jpg",
+    "filename": "distributed-programming-with-java"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/marguerie.jpg",
+    "filename": "linq-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mark.jpg",
+    "filename": "internet-bbss"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/marmanis.jpg",
+    "filename": "algorithms-of-the-intelligent-web"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mattmann.jpg",
+    "filename": "tika-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/massol.jpg",
+    "filename": "junit-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mcanally.jpg",
+    "filename": "ruby-in-practice"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mcginn.jpg",
+    "filename": "inside-lotusscript"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/messick.jpg",
+    "filename": "maximum-midi"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/minoli.jpg",
+    "filename": "planning-and-managing-atm-networks"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/minoli2.jpg",
+    "filename": "clientserver-applications-on-atm-networks"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/morris.jpg",
+    "filename": "javafx-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/mostarda.jpg",
+    "filename": "entity-framework-4-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/neimke.jpg",
+    "filename": "asp.net-2.0-web-parts-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/neward.jpg",
+    "filename": "core-owl-5.0"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/netherland.jpg",
+    "filename": "sass-and-compass-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/neward2.jpg",
+    "filename": "advanced-owl-5.0"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/neward3.jpg",
+    "filename": "server-based-java-programming"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/nielsen.jpg",
+    "filename": "sql-server-mvp-deep-dives"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/obe.jpg",
+    "filename": "postgis-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/omalley.jpg",
+    "filename": "programming-mac-os-x"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/osherove.jpg",
+    "filename": "the-art-of-unit-testing"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/owen.jpg",
+    "filename": "mahout-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/palermo.jpg",
+    "filename": "asp.net-mvc-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/palermo2.jpg",
+    "filename": "asp.net-mvc-2-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/palermo3.jpg",
+    "filename": "asp.net-mvc-4-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/panda.jpg",
+    "filename": "ejb-3-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/panda2.jpg",
+    "filename": "ejb-3-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/passin.jpg",
+    "filename": "explorer's-guide-to-the-semantic-web"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/patton.jpg",
+    "filename": "practical-lotusscript"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/patton2.jpg",
+    "filename": "domino-development-with-java"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/payette.jpg",
+    "filename": "windows-powershell-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/payette2.jpg",
+    "filename": "windows-powershell-in-action-second-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/laucher.jpg",
+    "filename": "f-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/pbrown2.jpg",
+    "filename": "silverlight-5-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/lightbody.jpg",
+    "filename": "webwork-in-action"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/pbrown.jpg",
+    "filename": "silverlight-4-in-action-revised-edition"
+  },
+  {
+    "uri": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/peak.jpg",
+    "filename": "hibernate-quickly"
+  }
+]

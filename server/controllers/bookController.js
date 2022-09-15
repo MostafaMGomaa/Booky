@@ -8,6 +8,7 @@ const {
 } = require('../utils/relatedBook');
 
 exports.getAllBooks = getAll(Book);
+
 exports.getBook = getOne(Book, {
   path: 'relatedBooks reviews',
   select: '-longDescription -__v -relatedBooks',

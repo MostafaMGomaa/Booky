@@ -1,0 +1,268 @@
+extends base
+
+block content
+    // Book
+    .container.mt-5
+        .row
+            .book-thumbnail.col.col-lg-3.text-center
+                img.shadow-lg.p-3.mb-5.bg-body.rounded(crossorigin="anonymous" src='img/books/flex-on-java.jpg', alt='book-cover')
+
+            .book-info.col.col-lg-9
+                .book-qucik-info.p-3
+                    h2.book-main-title.sw-bold.d-lg-inlines
+                        | 3D User Interfaces with Java 3D
+                    h6.byAtuhor.text-black-50
+                        | by 
+                        span Jon Barrilleaux
+                    span.d-lg-inline.text-black-50 Publish At: 2000-Aug
+                    .list-group-item.card-rating
+                        .card-rating-stars.d-lg-inline
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star
+                            i.fa-solid.fa-star-half-stroke
+                        span.card-rating-avg.text-black-50 (1,589)
+
+                .book-price.mt-4
+                    .book-format
+                        h5
+                            | Paperback 
+                            span.text-black-50 (Reprint) 
+                        p.oldprice.d-lg-inline.text-decoration-line-through
+                            | $200
+                        p.newprice.d-lg-inline.ms-sm-2 $100
+                    button.btn.btn-addChart.btn-success.btn-main.text-uppercase.mt-3
+                        i.fa-solid.fa-cart-plus
+                        |  Add to Chart
+
+                .description.mt-4
+                    h4.text-warning.text-uppercase description
+                    p.short-description-txt.text-black-50
+                        | 3D User Interfaces with Java 3D is a practical guide for providing
+                        | next-generation applications with 3D user interfaces for
+                        | manipulation of in-scene objects. Emphasis is on standalone and
+                        | web-based business applications, such as for online sales and mass
+                        | customization, but much of what this book offers has broad
+                        | applicability to 3D user interfaces in other pursuits such as
+                        | scientific visualization and gaming. This book provides an
+                        | extensive conceptual framework for 3D user interface techniques,
+                        | and an in-depth introduction to user interface support in the Java
+                        | 3D API, including such topics as picking, collision, and
+                        | drag-and-drop. Many of the techniques are demonstrated in a Java
+                        | 3D software framework included with the book, which also provides
+                        | developers with many general-purpose building blocks for
+                        | constructing their own user interfaces. Applications and their use
+                        | of 3D are approached realistically. The book is geared towards
+                        | sophisticated user interfaces for the \&quot;everyday user\&quot; who
+                        | doesn&apos;t have a lot of time to learn another application--much less
+                        | a complicated one--and an everyday computer system without exotic
+                        | devices like head mounted displays and data gloves. Perhaps the
+                        | best description of this book is: \&quot;A roadmap from Java 3D to
+                        | &apos;Swing 3D
+
+    // Related Books
+    .container.text-center.books-container.mt-5
+        .row.books-row
+            a.link-dark(href='', style='text-decoration: none')
+                h2.books-categories-title.mb-5.p-1.border.border-2.border-start-0.border-end-0.text-uppercase.text-info
+                    | Books you might like
+
+            .books-holder.card-group.overflow-auto.d-flex.flex-nowrap
+                button.btn.btn-arrow.books-holder-left-arrow-btn.rounded-circle.shadow-lg.p-3.mb-5.bg-white.rounded
+                    i.fa-solid.fa-arrow-left
+
+                .col.book-card
+                    img.card-img-top(src='img/books/flex-on-java.jpg', alt='...', style='width: 200px')
+                    .card-body
+                        h5.card-title Android in Action, Second Edition
+
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+
+                .col.book-card
+                    img.card-img-top(src='img/books/flex-on-java.jpg', alt='...', style='width: 200px')
+                    .card-body
+                        h5.card-title Specification by Example
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+
+                .col.book-card
+                    img.card-img-top(src='img/books/flex-on-java.jpg', alt='...', style='width: 200px')
+                    .card-body
+                        h5.card-title Unlocking Android
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+
+                .col.book-card
+                    img.card-img-top(src='img/books/flex-on-java.jpg', alt='...', style='width: 200px')
+                    .card-body
+                        h5.card-title Unlocking Android
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+
+                .col.book-card
+                    img.card-img-top(src='img/books/flex-on-java.jpg', alt='...', style='width: 200px')
+                    .card-body
+                        h5.card-title Team Foundation Server 2008 in Action
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+
+                .col.book-card
+                    img.card-img-top(src='img/books/flex-on-java.jpg', alt='...', style='width: 200px')
+                    .card-body
+                        h5.card-title SColl
+                    ul.list-group.list-group-flush
+                        li.list-group-item
+                        li.list-group-item.card-rating
+                            .card-rating-stars.d-lg-inline
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star
+                                i.fa-solid.fa-star-half-stroke
+                            span.card-rating-avg.text-black-50 (1,5k)
+                        li.list-group-item.card-price
+                            span.oldprice.text-decoration-line-through.text-black-50 200
+                            sub.doller $
+                            span.newprice.d-block
+                                | 100
+                                sub.doller $
+                    .card-body
+                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
+                            | Details
+                button.btn.btn-arrow.books-holder-right-arrow-btn.rounded-circle.shadow-lg.p-3.mb-5.bg-white.rounded
+                    i.fa-solid.fa-arrow-right
+
+    // Book details
+    div
+        h4.book-details-title.text-center.text-warning.text-capitalize.p-1.border.border-start-0.border-end-0
+            | book details
+        .container.text-center
+            .book-details__el.book-details__el-status.row.text-capitalize.text-dark.m-1.mt-0.mb-0.p-1
+                p.col.details__el-status-key.text-end status:
+                p.col.details__el-status-value.text-start.p-3 Publish
+            .book-details__el.book-details__el-isbn.row.text-capitalize.text-dark.m-1.mt-0.mb-0.p-1
+                p.col.details__el-isbn-key.text-end isbn:
+                p.col.details__el-isbn-value.text-start.p-3.text-warning
+                    | 1234569
+            .book-details__el.book-details__el-pageCount.row.text-capitalize.text-dark.m-1.mt-0.mb-0.p-1
+                p.col.details__el-pageCount-key.text-end Page Count:
+                p.col.details__el-pageCount-value.text-start.p-3 250
+            .book-details__el.book-details__el-publishedDate.row.text-capitalize.text-dark.m-1.mt-0.mb-0.p-1
+                p.col.details__el-publishedDate-key.text-end
+                    | Published Date:
+                p.col.details__el-publishedDate-value.text-start.p-3
+                    | 2022-Aug
+            .book-details__el.book-details__el-authors.row.text-capitalize.text-dark.m-1.mt-0.mb-0.p-1
+                p.col.details__el-authors-key.text-end Authors:
+                p.col.details__el-authors-value.text-start.p-3
+                    | Jon Barrilleaux
+
+    // Reviews
+    .reviews.mb-5
+        h4.border.border-end-0.border-start-0.p-2.m-5.text-warning.text-center
+            | 37 Reviews
+       
+        .container.reviews-container.mb-5          
+            .review.border.border-2.border-start-0.border-end-0.p-3.border-top-0.bg-light.shadow.mb-3.bg-body
+                h5.review-user__info.review-owner.p-2
+                    img.user-avatar.review-user__info-avatar.rounded-circle.me-2(src='img/user/default.png', alt='user-avatar')
+                    | Ahmed Mohamed
+                    span.review-user__info-rate.text-black-50
+                        i.fa-solid.fa-star
+                        |  4.0
+                .review-body.ms-5.mb-3
+                    p.review-decription.mb-3
+                        | The process was smooth, after providing the required info,
+                        | Pragyesh sent me an outstanding packet of wireframes. Thank you a
+                        | lot!
+                    p.publish-from.text-black-50 Published 4 weeks ago        
+          
+        .review-form
+            p.text-center.text-capitalize.text-danger
+                | Sorry, review product feature via UI doesn&apos;t available yet
