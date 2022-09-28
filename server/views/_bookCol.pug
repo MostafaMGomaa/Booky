@@ -1,0 +1,23 @@
+mixin bookCol(slug, title, ratingQuantity, oldPrice, newPrice, discountRate ,rating)
+    .col.book-card
+        img.card-img-top(src=`/img/books/${slug}.jpg` alt=`${slug}-img` style='width: 200px')
+        .card-body
+            h5.card-title= title 
+        ul.list-group.list-group-flush
+            li.list-group-item
+            li.list-group-item.card-rating
+                .card-rating-stars.d-lg-inline
+                    each star in [1,2,3,4,5]
+                        - if(star <= rating)
+                            i.fa-solid.fa-star
+                      
+                span.card-rating-avg.text-black-50= `(${ratingQuantity})`
+            li.list-group-item.card-price
+                - if(discountRate)     
+                    span.oldprice.text-decoration-line-through.text-black-50= oldPrice 
+                    sub.doller $
+                span.newprice.d-block= newPrice
+                    sub.doller $
+            .card-body
+                a.btn.btn-warning.btn-main.rounded-pill(href=`/book/${slug}`)
+                    | Details

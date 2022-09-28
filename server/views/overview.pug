@@ -1,4 +1,5 @@
 extends base
+include _bookCol
 
 mixin cateigories(icon, text)
     .col-md-5.col-lg-3.categories-card.pt-4
@@ -40,149 +41,43 @@ block content
 
     .container.text-center.books-container.mt-5
         .row.books-row
-            a.link-dark(href='' style='text-decoration: none')
-                h2.books-categories-title.mb-5 Android
+            a.link-dark(href='#' style='text-decoration: none')
+                h2.books-categories-title.mb-5 Web Development Books
             .books-holder.card-group.overflow-auto.d-flex.flex-nowrap
-                button.btn.btn-arrow.books-holder-left-arrow-btn.rounded-circle.shadow-lg.p-3.mb-5.bg-white.rounded
-                    i.fa-solid.fa-arrow-left
-                .col.book-card
-                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg' alt='...' style='width: 200px')
-                    .card-body
-                        h5.card-title Android in Action, Second Edition
-                    ul.list-group.list-group-flush
-                        li.list-group-item
-                        li.list-group-item.card-rating
-                            .card-rating-stars.d-lg-inline
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star-half-stroke
-                            span.card-rating-avg.text-black-50 (1,5k)
-                        li.list-group-item.card-price
-                            span.oldprice.text-decoration-line-through.text-black-50 200
-                            sub.doller $
-                            span.newprice.d-block
-                                | 100
-                                sub.doller $
-                    .card-body
-                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
-                            | Details
-                .col.book-card
-                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg' alt='...' style='width: 200px')
-                    .card-body
-                        h5.card-title Specification by Example
-                    ul.list-group.list-group-flush
-                        li.list-group-item
-                        li.list-group-item.card-rating
-                            .card-rating-stars.d-lg-inline
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star-half-stroke
-                            span.card-rating-avg.text-black-50 (1,5k)
-                        li.list-group-item.card-price
-                            span.newprice.d-block
-                                | 100
-                                sub.doller $
-                    .card-body
-                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
-                            | Details
-                .col.book-card
-                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg' alt='...' style='width: 200px')
-                    .card-body
-                        h5.card-title Unlocking Android
-                    ul.list-group.list-group-flush
-                        li.list-group-item
-                        li.list-group-item.card-rating
-                            .card-rating-stars.d-lg-inline
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star-half-stroke
-                            span.card-rating-avg.text-black-50 (1,5k)
-                        li.list-group-item.card-price
-                            span.oldprice.text-decoration-line-through.text-black-50 200
-                            sub.doller $
-                            span.newprice.d-block
-                                | 100
-                                sub.doller $
-                    .card-body
-                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
-                            | Details
-                .col.book-card
-                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg' alt='...' style='width: 200px')
-                    .card-body
-                        h5.card-title Unlocking Android
-                    ul.list-group.list-group-flush
-                        li.list-group-item
-                        li.list-group-item.card-rating
-                            .card-rating-stars.d-lg-inline
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star-half-stroke
-                            span.card-rating-avg.text-black-50 (1,5k)
-                        li.list-group-item.card-price
-                            span.oldprice.text-decoration-line-through.text-black-50 200
-                            sub.doller $
-                            span.newprice.d-block
-                                | 100
-                                sub.doller $
-                    .card-body
-                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
-                            | Details
-                .col.book-card
-                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg' alt='...' style='width: 200px')
-                    .card-body
-                        h5.card-title Team Foundation Server 2008 in Action
-                    ul.list-group.list-group-flush
-                        li.list-group-item
-                        li.list-group-item.card-rating
-                            .card-rating-stars.d-lg-inline
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star-half-stroke
-                            span.card-rating-avg.text-black-50 (1,5k)
-                        li.list-group-item.card-price
-                            span.oldprice.text-decoration-line-through.text-black-50 200
-                            sub.doller $
-                            span.newprice.d-block
-                                | 100
-                                sub.doller $
-                    .card-body
-                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
-                            | Details
-                .col.book-card
-                    img.card-img-top(src='https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg' alt='...' style='width: 200px')
-                    .card-body
-                        h5.card-title SColl
-                    ul.list-group.list-group-flush
-                        li.list-group-item
-                        li.list-group-item.card-rating
-                            .card-rating-stars.d-lg-inline
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star
-                                i.fa-solid.fa-star-half-stroke
-                            span.card-rating-avg.text-black-50 (1,5k)
-                        li.list-group-item.card-price
-                            span.oldprice.text-decoration-line-through.text-black-50 200
-                            sub.doller $
-                            span.newprice.d-block
-                                | 100
-                                sub.doller $
-                    .card-body
-                        button.btn.btn-warning.btn-main.rounded-pill(href='#')
-                            | Details
-                button.btn.btn-arrow.books-holder-right-arrow-btn.rounded-circle.shadow-lg.p-3.mb-5.bg-white.rounded
-                    i.fa-solid.fa-arrow-right
-        a.text-uppercase.m-4.me-5.float-end(href='#')  See More ... 
+                button.btn.btn-arrow.books-holder-left-arrow-btn.rounded-circle.pb-0.p-2.mb-5.rounded
+                    i.fa-solid.fa-angle-left 
+                each book in webBooks   
+                    - let newPrice = (book.price- (book.price / 100 * book.discountRate)).toFixed(2)
+                    +bookCol(book.slug, book.title, book.ratingsQuantity, book.price, newPrice, book.discountRate, book.ratingsAverage)
+                button.btn.btn-arrow.books-holder-right-arrow-btn.rounded-circle.pb-0.p-2.mb-5.rounded
+                    i.fa-solid.fa-angle-right
+        a.text-uppercase.m-4.me-5.float-end(href=`#`)  See More ... 
 
+    .container.text-center.books-container.mt-5.ms-7
+        .row.books-row
+            a.link-dark(href='#' style='text-decoration: none')
+                h2.books-categories-title.mb-5 Programming Books
+            .books-holder.card-group.overflow-auto.d-flex.flex-nowrap
+                button.btn.btn-arrow.books-holder-left-arrow-btn.rounded-circle.pb-0.p-2.mb-5.rounded
+                    i.fa-solid.fa-angle-left
+                each book in programmingBooks   
+                    - let newPrice = (book.price- ((book.price / 100 ) * book.discountRate)).toFixed(2)
+                    +bookCol(book.slug, book.title, book.ratingsQuantity, book.price, newPrice, book.discountRate, book.ratingsAverage)
+                button.btn.btn-arrow.books-holder-right-arrow-btn.rounded-circle.pb-0.p-2.mb-5.rounded
+                    i.fa-solid.fa-angle-right
+        a.text-uppercase.m-4.me-5.float-end(href='#')  See More ...
 
+    .container.text-center.books-container.mt-5.ms-7
+        .row.books-row
+            a.link-dark(href='#' style='text-decoration: none')
+                h2.books-categories-title.mb-5 Java Books
+            .books-holder.card-group.overflow-auto.d-flex.flex-nowrap
+                button.btn.btn-arrow.books-holder-left-arrow-btn.rounded-circle.pb-0.p-2.mb-5.rounded
+                    i.fa-solid.fa-angle-left
+                each book in javaBooks    
+                    - let newPrice = (book.price- (book.price / 100 * book.discountRate)).toFixed(2)
+                    +bookCol(book.slug, book.title, book.ratingsQuantity, book.price, newPrice, book.discountRate,  book.ratingsAverage)
+                button.btn.btn-arrow.books-holder-right-arrow-btn.rounded-circle.pb-0.p-2.mb-5.rounded
+                    i.fa-solid.fa-angle-right
+        .see-more-link.m-4.me-5.float-end
+         a.text-uppercase(href='#')  See More ...

@@ -6,6 +6,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 
 const bookRoutes = require('./routes/bookRoutes');
 const userRoutes = require('./routes/userRoutes');
@@ -20,30 +21,13 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 // 1) GLOBAL MIDDLEWARES
-
-const corsOptions = {
-  origin: '*',
-  credentials: true,
-  optionSuccessStatus: 200,
-};
-
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
+app.use(cors());
 
 // Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Set security HTPP headers.
-app.use(
-  helmet({
-    contentSecurityPolicy: {
-      directives: {
-        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        'img-src': ["'self'", 's3.amazonaws.com'],
-      },
-    },
-  })
-);
+app.use(helmet());
 
 // Each ip can sent only 250 request per hour
 const limiter = rateLimit({
@@ -55,6 +39,7 @@ app.use('/api', limiter);
 
 // Body parser
 app.use(express.json({ limit: '10kb' }));
+app.use(cookieParser());
 
 // Data sanitization against Nosql query injection.
 app.use(mongoSanitize());
@@ -68,7 +53,7 @@ app.use(hpp());
 // Test middleware
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
-  // console.log(req.headers);
+  // console.log(req.cookies);
   next();
 });
 

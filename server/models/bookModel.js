@@ -19,6 +19,7 @@ const bookSchema = new mongoose.Schema(
       required: [true, 'A Book must have a number of Pages '],
     },
     price: Number,
+
     discountRate: {
       type: Number,
       validate: {
@@ -102,13 +103,12 @@ bookSchema.pre('save', function (next) {
   next();
 });
 
+//  Applay random disount rate and ratingsQuantity to books
 bookSchema.pre('save', function (next) {
-  const orignalPrice = (this.pageCount / 100) * 50;
+  this.discountRate = Math.floor(Math.random() * 70);
+  this.ratingsQuantity = Math.floor(Math.random() * 100 + 10);
+  this.ratingsAverage = Math.floor(Math.random() * 5) + 1;
 
-  if (this.discountRate)
-    this.price = orignalPrice - orignalPrice * (this.discountRate / 100);
-  else this.price = orignalPrice - 0.1;
-  this.price = this.price.toFixed(2);
   next();
 });
 

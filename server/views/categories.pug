@@ -1,0 +1,15 @@
+extends base
+include _bookCol
+
+block content
+    include _sidebar
+
+    .container.text-center.books-container.mt-5
+        .row.books-row
+            a.link-dark(href='#' style='text-decoration: none')
+                h2.books-categories-title.mb-5= `${title} Books`  
+            .books-holder.card-group.overflow-auto.d-flex
+                each book in books   
+                    - let newPrice = (book.price- (book.price / 100 * book.discountRate)).toFixed(2)
+                    +bookCol(book.slug, book.title, book.ratingsQuantity, book.price, newPrice, book.discountRate, book.ratingsAverage)
+

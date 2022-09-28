@@ -1,0 +1,74 @@
+extends base
+include _bookCol
+
+mixin navItem(link, icon, text, status) 
+    li.nav-item
+        a.nav-link.text-white(href=`${link}` aria-current='page' class=`${status}`)
+            i.me-4.fs-18(class=`${icon}`)
+            | #{text}
+
+block content
+    .container-fluid.user-page_container.ms-5.w-90
+        .row.mt-5.w-75
+            .col.col-lg-3.text-start.user-sidebar.d-flex.flex-column.flex-shrink-0.p-3.text-white.bg-dark
+                a.Managed-flex.align-items-center.mb-md-0.me-md-auto.text-white.text-decoration-none(href='/')
+                    span.fs-4.text-uppercase.text-light.ms-5
+                        i.fa-solid.fa-user-secret.me-2.text-info
+                        |  ME               
+                hr
+                ul.nav.nav-pills.flex-column.mb-auto
+                    +navItem('#', 'fa-solid fa-gear', 'Settings', 'active')
+                    +navItem('#', 'fa-regular fa-star', ' My reviews', 'inactive')
+                    +navItem('#', 'fa-solid fa-cart-arrow-down', 'Chart', 'inactive')
+                    +navItem('#', 'fa-regular fa-credit-card', 'Billing', 'inactive')
+
+                    -if(user.role === 'admin')
+                        li.mt-4.mb-1.border-bottom.border-light
+                            span.text-light.ms-1.fs-6.fw-lighter.p-2.ps-0.text-start
+                                |  Admin
+                        +navItem('#', 'fa-solid fa-star', ' Manage reviews', 'inactive')
+                        +navItem('#', 'fa-regular fa-credit-card', 'Manage billing', 'inactive')
+
+
+                .dropdown
+                    a#dropdownUser1.d-flex.align-items-center.text-white.text-decoration-none(href='#' data-bs-toggle='dropdown' aria-expanded='false')
+                        img.rounded-circle.me-2.user-avatar(src=`img/user/${user.photo}` alt='' width='32' height='32')
+                        strong mostafa
+                 
+
+            .col.col-lg-9.user-settings.justify-content-center.w-50.ms-6 
+                .account-setting
+                    h3.account-setting__title.mb-3.mt-5
+                        | YOUR ACCOUNT SETTINGS
+                    form#account-setting__form.account-setting__form.mb-3
+                        .account-setting__name
+                            label.text-start.fw-semibold.mb-1(for='name-lable') Name
+                            input#name.form-control.mb-4.text-black-50(type='text' placeholder='name'  value=`${user.name}`)
+                        .account-setting__email
+                            label.text-start.fw-semibold.mb-1(for='floatingInput') Email address
+                            input#email.form-control.mb-4.text-black-50(type='email' placeholder='name@example.com' value=`${user.email}`)
+                        .account-setting__photo.text-start.position-relative
+                            img.form__user-photo.me-1.mb-1.p-1.rounded-circle.bg-dark(src=`/img/user/${user.photo}` alt='user photo')
+                            input#photo.form__upload.opacity-0.mt-3(type='file' accept='image/*' name='photo' )
+                            label.choose-photo__label.position-absolute.bottom-50.end-50.text-dark.mb-1.mt-1.p-2.rounded(for='photo') Choose new photo
+
+                        button#save-settings.btn.btn-info.rounded-pill.p-2.ps-4.pe-4.d-flex.ms-auto.me-5(type='submit')
+                            | Save Settings
+                hr
+                .password-setting
+                    h3.text-uppercase.account-setting__title.mb-3.mt-5
+                        | password change
+                    form#account-password__form.account-password__form.mb-5
+                        .account-setting__current-password
+                            label.text-capitalize.text-start.fw-semibold.mb-1(for='current-password-lable') current password
+                            input#current-password.form-control.mb-4(type='password' placeholder='***********' required minlength='8') 
+                        .account-setting__newpassword
+                            label.text-capitalize.text-start.fw-semibold.mb-1(for='floatingInput')
+                                | new password
+                            input#newpassword.form-control.mb-4(type='password' placeholder='***********' required minlength='8')
+                        .account-setting__confirm-newpassword
+                            label.text-capitalize.text-start.fw-semibold.mb-1(for='floatingInput' )
+                                | confirm password
+                            input#confirm-newpassword.form-control.mb-4(type='password' placeholder='***********' )
+                        button#save-password.btn.btn-info.rounded-pill.p-2.ps-4.pe-4.d-flex.ms-auto.me-5(type='submit')
+                            | Save Password

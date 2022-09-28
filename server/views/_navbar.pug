@@ -1,8 +1,8 @@
-nav.navbar.navbar-expand-lg.sticky-top
+nav.navbar.navbar-expand-lg.sticky-top.bg-dark
     .container-fluid
         // LOGO
-        a.navbar-brand(href='#')
-            img.nav-logo(src='img/logo/logoligth-blue-logo.png' alt='Booky-logo')
+        a.navbar-brand(href='/')
+            img.nav-logo(src='/img/logo/logoligth-blue-logo.png' alt='Booky-logo')
         // TOGGLER
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
             i.fa-solid.fa-bars
@@ -17,22 +17,26 @@ nav.navbar.navbar-expand-lg.sticky-top
                             button.btn.btn-ouline-success.nav-search-btn.me-5(type='submit')
                                 i.fa-solid.fa-magnifying-glass
             // user
-            ul.navbar-nav.user-info
-                li.nav-item.user-avatar.d-lg-inline.ms-5.me-2.mt-2.p-1.rounded-circle
-                    button.btn.rounded-circle.p-0
-                        img.user-avatar-img.p-1(src='img/user/default-colored.png' alt='user-avatar')
+            if(user)
+                ul.navbar-nav.user-info.me-4
+                    li.nav-item.user-chart.mt-2.ms-2  
+                        a.btn.btn-nav-chart(href='#user')
+                            i.fa-solid.fa-cart-shopping
 
-                li.nav-item.user-name.pt-3.ms-2.me-2
-                    a.text-decoration-none.nav-userName(href='#' target='_blank')
-                        h5 Mostafa
+                    li.nav-item.dropdown.ms-4.me-5.mt-1
+                        a.nav-link.dropdown-toggle.nav-item.user-avatar.text-white.rounded-circle.p-0.d-lg-inline.mt-lg-2.ms-3.p-1.p-lg-1(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                            img.user-avatar-img.p-1.rounded-circle(src=`/img/user/${user.photo}` alt='user-avatar')
+                        ul.dropdown-menu.dropdown-menu-dark.me-5.w-50
+                            li.dropdown-item.nav-item.user-name.border-bottom.border-light
+                                i.fa-solid.fa-user.d-inline.fs-6.me-2.p-1.mt-2
+                                a.text-decoration-none.nav-userName.p-1.ps-0.pe-0(href='/me' target='_blank')
+                                    h5.d-inline= user.name.split(' ')[0]
+                            li.dropdown-item.nav-item.p-1.mt-1
+                                a.logout-btn.btn-nav-logout.text-decoration-none.ps-0.pe-0.p-1
+                                    h5.d-inline.text-danger.ms-3 Logout
+                                i.fa-solid.fa-arrow-right-from-bracket.d-inline.fs-6.ms-1.pt-1.text-danger
 
-                li.nav-item.user-chart.pt-3.ms-2.me-2
-                    a.btn.btn-nav-chart(href='#user')
-                        i.fa-solid.fa-cart-shopping
-                        span.badge.badge-light 4
-
-                li.nav-item.user-chart.pt-3.ms-2.me-2
-                    a.btn-nav-logout.text-decoration-none(href='#logout')
-                        h4 Logout
-            //- a.btn.btn-outline-info.rounded-pill.me-2.p-2.ps-4.pe-4(href='#') Signup
-            //- a.btn.btn-info.rounded-pill.p-2.ps-4.pe-4(href='login.html') Login
+                   
+            else                
+                a.btn.btn-outline-info.rounded-pill.p-2.ps-4.pe-4.me-2(href='/login') Login
+                a.btn.btn-info.rounded-pill.me-2.p-2.ps-4.pe-4(href='#') Signup

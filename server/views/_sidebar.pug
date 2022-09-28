@@ -8,49 +8,19 @@ mixin link(text, href)
 
     ul.list-unstyled.ps-0
         li.mb-1.main-categotries
-            button.btn.btn-toggle.align-items-center.rounded.collapsed.btn-outline-info.mb-2(data-bs-toggle='collapse', data-bs-target='#home-collapse', aria-expanded='true')
-                | MAIN
             #home-collapse.collapse.show
                 ul.btn-toggle-nav.list-unstyled.fw-normal.ps-1.pb-1.small
-                    +link('Mobile Technology', '#')
-                    +link('Java', '#')
-                    +link('Web Development', '#')
-                    +link('Software Engineering', '#')
-                    +link(' Microsoft/.NET', '#')
-                    +link('Microsoft', '#')
-                    +link('Programming', '#')
-                    +link('Open Source', '#')
-                    +link('Mobile', '#')
-                    li
-                        a.link-dark.rounded.ms-2(href='#') Mobile Technology    
-                    li
-                        a.link-dark.rounded.ms-2(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#')
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2(href='#', link='') .NET
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') Microsoft .NET
-                    li
-                        a.link-dark.rounded.ms-2(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') 
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') Perl
-                    li
-                        a.link-dark.rounded.ms-2.link(href='#') Python
+                    +link('Mobile Technology', 'categories/Mobile Technology')
+                    +link('Java', 'categories/Java')
+                    +link('Web Development', 'categories/Web Development')
+                    +link('Software Engineering', 'categories/Software Engineering')
+                    +link('Microsoft/.NET', 'categories/Microsoft .NET')
+                    +link('Microsoft', 'categories/Microsoft')
+                    +link('Programming', 'categories/Programming')
+                    +link('Open Source', 'categories/Open Source')
+                    +link('Mobile', 'categories/Mobile')
+                    +link('Perl', 'categories/Perl')
+                    +link('Python', 'categories/Python')
         li.border-top.my-3
 
 .b-example-divider

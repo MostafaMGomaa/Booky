@@ -1,0 +1,22 @@
+extends base
+include _bookCol
+
+block content
+    main.text-center.justify-content-center.form-signin.position.relative
+        form.text-center.login-form
+            img.mb-4(src='img/logo/logo.png' alt='' width='72' height='59')
+            h1.h3.mb-3.fw-normal Please log in
+            .form-floating
+                input#floatingInput.form-control(type='email' placeholder='name@example.com', required)
+                label.text-start(for='floatingInput') Email address
+            .form-floating.mb-4
+                input#floatingPassword.form-control(type='password' ,placeholder='••••••••', required, minlength='8')
+                label.text-start(for='floatingPassword') Password
+          
+            button.w-100.btn.btn-lg.btn-info.mb-4(type='submit')
+                | Log in
+            p.mt-5.mb-5.text-muted &copy; Mostafa Gomaa
+  
+                        
+
+
