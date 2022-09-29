@@ -1,10 +1,10 @@
 const nodemailer = require('nodemailer');
 const pug = require('pug');
-const { convert } = require('html-to-text');
+const htmlToText = require('html-to-text');
 
 module.exports = class Email {
   constructor(user, url) {
-    this.to = user.name;
+    this.to = user.email;
     this.firstName = user.name.split(' ')[0];
     this.url = url;
     this.form = `Mostafa Gomaa <${process.env.EMAIL_FROM}>`;
@@ -42,9 +42,7 @@ module.exports = class Email {
       to: this.to,
       subject,
       html,
-      text: convert(html, {
-        wordwrap: 130,
-      }),
+      text: htmlToText.fromString(html),
     };
     /**
      * htmlToText.fromString(html)
@@ -56,5 +54,12 @@ module.exports = class Email {
 
   async sendWelcom() {
     await this.send('welcom', 'Welcom to Booky store');
+  }
+
+  async sendPassowrdReset() {
+    this.send(
+      'passwordReset',
+      'Your Password reset token (valid only for 10 minutes'
+    );
   }
 };

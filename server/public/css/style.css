@@ -183,7 +183,10 @@ a {
 .landing-p span {
   color: var(--light-blue-color);
 }
-
+.banner-container {
+  width: 1200px;
+  height: 700px;
+}
 .categories-row {
   border: 2px solid var(--dark-color);
   border-style: solid none;
@@ -197,9 +200,6 @@ a {
   font-size: 34px;
 }
 
-.books-container {
-  height: 600px;
-}
 .books-categories-title {
   margin-top: 32px;
 }
@@ -481,9 +481,6 @@ a {
   .ad-photo {
     width: 400px;
   }
-  .books-container {
-    /* margin-left: 10px !important; */
-  }
   .book-card {
     margin-bottom: 16px;
     min-height: 520px;
@@ -498,4 +495,8 @@ a {
     margin-top: 48px;
     height: 500px;
   }
+  /* .banner-container {
+    width: 1200px;
+    height: 700px;
+  } */
 }
