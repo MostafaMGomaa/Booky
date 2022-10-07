@@ -1,0 +1,63 @@
+extends base
+
+mixin cartItem(slug, title, desc)
+  .item-card.container.shadow.border.border-2.mt-4.mb-4.rounded
+    .row
+      .col.col-lg-3.p-1
+        img.item-card__img(src=`img/books/${slug}.jpg` alt=`${slug} book` width='180' height='180')
+      .col.col-lg-6.text-start
+        h5.item-card__title=title 
+        span.text-black-50=desc
+      .col.col-lg-1
+        form.itemQuantity__form.mb-0
+          select#itemQuantity(name='itemQuantity')
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+            option(value='4') 4
+            option(value='5') 5
+            option(value='+5') +5
+      .col.col-lg-1
+        span  900$
+      .col.col-lg-1
+        button.btn.remove-btn
+          i.fa-regular.fa-trash-can.text-danger.fs-4
+
+
+block content
+  .container-fluid.text-center.bg-dark.bg-gradient.mb-5(style='--bs-bg-opacity: 0.01')
+    .row
+      .col.col-lg-7.cart-Items__container.bg-white.mt-5.ms-5
+        h1.text-uppercase.text-start.ms-5.mt-5 Shopping Cart
+        p.numOfItems.h6.text-start.text-black-50.text-capitalize.ms-5.mb-5
+          | Items in cart : #{user.cart.length + 1}
+        - let itemsPrice = 0
+        - const charge = 0
+        each cartItem in user.cart
+          - let newPrice = ( cartItem.book.price - ( cartItem.book.price / 100 * cartItem.book.discountRate))
+          - itemsPrice += newPrice
+          +cartItem(cartItem.book.slug, cartItem.book.title, cartItem.book.longDescription.split(".")[0])
+
+        
+      .col.col-lg-3.checkout-col.shadow.rounded.m-5.border.border-1.border-primary.bg-white.text-start
+        main
+          form.text-center
+            h1.h3.mb-3.fw-normal.text-capitalize.mt-5 checkout
+            .form-floating.mt-4
+              input#floatingInput.form-control(type='text' placeholder='code')
+              label.text-start(for='floatingInput') Code
+              button.btn.btn-outline-dark.mt-2 Apply
+            .container.text-center.checkout-prices.mt-3.mb-3
+              .row.checkout-prices__charge.text-capitalize.text-black-50.p-3
+                .col.col-9.text-start charge
+                .col.col-3=`${charge}$`
+              .row.checkout-prices__itemPrice.text-capitalize.border-bottom.text-black-50.p-3
+                .col.col-9.text-start Items Price
+                .col.col-3=`${itemsPrice.toFixed(2)}$` 
+              .row.checkout-prices__totalPrice.text-capitalize.p-3
+                .col.col-9.text-start totalPrice
+                .col.col-3= `${itemsPrice.toFixed(1) + charge}$`
+            button.btn.btn-lg.btn-primary.ms-1.me-1.w-100.mt-3(type='submit')
+              | Checkout
+            p.mt-5.mb-3.text-muted &copy;MostafaMGomaa 2022
+//- .position-absolute.top-0.end-0

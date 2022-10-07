@@ -8,9 +8,9 @@ const {
   updateOne,
 } = require('./handlerFactory');
 
-exports.setTourUserIds = (req, res, next) => {
+exports.setBookUserIds = (req, res, next) => {
   if (!req.body.user) req.body.user = req.user.id;
-  if (!req.body.book) req.body.book = req.params.bookId;
+  if (!req.body.book) req.body.book = req.params.bookId || req.params.id;
   next();
 };
 

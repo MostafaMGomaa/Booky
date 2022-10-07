@@ -56,7 +56,10 @@ exports.getAllUsers = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getUser = getOne(User);
+exports.getUser = getOne(User, {
+  path: 'cart',
+  select: ' -__v',
+});
 
 exports.deleteUser = (req, res, next) => {
   res.status(200).send('user has deleted');

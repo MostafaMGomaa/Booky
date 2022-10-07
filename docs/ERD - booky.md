@@ -51,7 +51,7 @@ the Service
 | PasswordResetExpires | Date |
 | Active | Boolean |
 
-**Chart**:
+**Cart**:
 | Attribute | Type |
 |---------- |----- |
 | Book | BookObject |

@@ -1,6 +1,7 @@
 const Book = require('../models/bookModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
+const { getUser } = require('./userController');
 
 exports.getOverview = catchAsync(async (req, res, next) => {
   // 1) Getting books data from collection.
@@ -57,3 +58,9 @@ exports.login = catchAsync(async (req, res, next) => {
     title: 'Login',
   });
 });
+
+exports.getCart = (req, res, next) => {
+  res.status(200).render('cart', {
+    title: 'My Cart',
+  });
+};
